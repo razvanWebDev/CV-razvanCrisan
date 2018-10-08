@@ -1,0 +1,15 @@
+body {
+  background-color: gray;
+}
+div {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border: 1px;
+}
+#moto {
+  color: darkgreen;
+}
+.favorite {
+  color: blue;
+}
