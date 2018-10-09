@@ -1,15 +1,28 @@
 body {
-  background-color: gray;
+  background-color: lightblue;
+  padding: 10px;
 }
 div {
   background-color: white;
   padding: 10px;
   margin: 10px;
-  border: 1px;
+  border-style: ridge;
+  border-color: rgb(20, 83, 104);
+  border-radius: 8px;
 }
 #moto {
   color: darkgreen;
+  margin: 10px;
 }
 .favorite {
   color: blue;
+}
+.foto {
+  width: 200px;
+  border-radius: 8px;
+  margin: 10px;
+}
+table {
+  width: 200px;
+  text-align: center;
 }
