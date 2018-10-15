@@ -3,11 +3,10 @@ body {
   padding: 10px;
 }
 div {
-  background-color: white;
+  background-color: rgb(252, 250, 236);
   padding: 10px;
   margin: 10px;
-  border-style: ridge;
-  border-color: rgb(20, 83, 104);
+  border: 1px ridge rgb(20, 83, 104);
   border-radius: 8px;
 }
 #moto {
