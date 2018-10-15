@@ -2,7 +2,7 @@ body {
   background-color: lightblue;
   padding: 10px;
 }
-div {
+.page-block {
   background-color: rgb(252, 250, 236);
   padding: 10px;
   margin: 10px;
@@ -13,11 +13,40 @@ div {
   width: 150px;
   border: 1px ridge rgb(20, 83, 104);
   border-radius: 8px;
+  margin: 10px;
 }
 #moto {
   color: darkgreen;
   margin: 10px;
 }
+#top-menu-bar {
+  text-align: center;
+  color: #fff;
+  background-color: #334455;
+}
+
+#top-menu-bar li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#top-menu-bar a {
+  text-decoration: none;
+  margin: 2px 0 2px 0;
+  padding: 5px 15px 5px 15px;
+  display: inline-block;
+  color: #fff;
+}
+
+#top-menu-bar a:visited {
+  color: #ffffff;
+}
+#top-menu-bar a:hover {
+  color: #334455;
+  background-color: #ffffff;
+}
+
 .favorite {
   color: blue;
 }
