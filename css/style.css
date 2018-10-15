@@ -9,6 +9,11 @@ div {
   border: 1px ridge rgb(20, 83, 104);
   border-radius: 8px;
 }
+#poza_cv {
+  width: 150px;
+  border: 1px ridge rgb(20, 83, 104);
+  border-radius: 8px;
+}
 #moto {
   color: darkgreen;
   margin: 10px;
@@ -16,11 +21,7 @@ div {
 .favorite {
   color: blue;
 }
-.foto {
-  width: 150px;
-  border-radius: 8px;
-  margin: 10px;
-}
+
 table {
   width: 200px;
   text-align: center;
