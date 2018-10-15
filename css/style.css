@@ -2,17 +2,34 @@ body {
   background-color: lightblue;
   padding: 10px;
 }
+.test {
+  border: 1px solid #000;
+  margin: 1px;
+  padding: 5px;
+}
+
+#left-sidebar {
+  width: 30%;
+  float: left;
+  border-color: red;
+}
+
+#content {
+  border-color: green;
+  padding-left: 35%;
+}
 .page-block {
   background-color: rgb(252, 250, 236);
-  padding: 10px;
+  padding: 24px;
   margin: 10px;
-  border: 1px ridge rgb(20, 83, 104);
-  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 2);
+  border-radius: 2px;
 }
+
 #poza_cv {
   width: 150px;
   border: 1px ridge rgb(20, 83, 104);
-  border-radius: 8px;
+  border-radius: 50%;
   margin: 10px;
 }
 #moto {
