@@ -1,23 +1,39 @@
 body {
   background-color: lightblue;
 }
+
+.body {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: rgba(100, 225, 241, 0.9);
+}
 .test {
   border: 1px solid #000;
   margin: 2px;
+  padding: 1;
+  background-color: white;
 }
 
 #left-sidebar {
-  width: 30%;
-  float: left;
+  width: 25%;
+  float: right;
 }
 
 #content {
   border-color: green;
-  padding-left: 33%;
+  padding-right: 28%;
 }
+
 #content div {
   border-color: lightgreen;
 }
+#content-wrap {
+  border-color: pink;
+  background-color: yellow;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .page-block {
   background-color: white;
   padding: 24px;
