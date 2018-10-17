@@ -1,14 +1,13 @@
 body {
-  background-color: lightblue;
+  background-color: white;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-.body {
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: rgba(100, 225, 241, 0.9);
-}
-.test {
-  border: 1px solid #000;
+.ztest {
+  border: 3px solid #000;
   margin: 2px;
   padding: 1;
   background-color: white;
@@ -28,10 +27,9 @@ body {
   border-color: lightgreen;
 }
 #content-wrap {
-  border-color: pink;
-  background-color: yellow;
   padding-left: 5%;
   padding-right: 5%;
+  background-color: white;
 }
 
 .page-block {
@@ -40,16 +38,27 @@ body {
   margin: 10px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 #poza_cv {
-  width: 150px;
+  width: 152px;
   border-radius: 50%;
-  margin: 10px;
+  float: left;
+  box-shadow: inset 0 1.5px 3px 0 rgba(0, 0, 0, 0.15),
+    0 1.5px 3px 0 rgba(0, 0, 0, 0.15);
+  box-sizing: content-box;
+  margin: auto;
+  position: relative;
+}
+#fundal-linkedin {
+  width: 100%;
 }
 #moto {
   color: darkgreen;
-  margin: 10px;
 }
 #top-menu-bar {
   text-align: center;
@@ -77,10 +86,6 @@ body {
 #top-menu-bar a:hover {
   color: #334455;
   background-color: #ffffff;
-}
-
-.favorite {
-  color: blue;
 }
 
 table {
