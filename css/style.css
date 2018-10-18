@@ -1,16 +1,15 @@
+.ztest {
+  border: 3px solid #000;
+  margin: 2px;
+  padding: 1;
+}
+/*--------remove above blocks afrter finished---------*/
 body {
   background-color: white;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
     "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-.ztest {
-  border: 3px solid #000;
-  margin: 2px;
-  padding: 1;
-  background-color: white;
 }
 
 #left-sidebar {
@@ -38,10 +37,6 @@ body {
   margin: 10px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
-    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 #poza_cv {
@@ -51,12 +46,12 @@ body {
   box-shadow: inset 0 1.5px 3px 0 rgba(0, 0, 0, 0.15),
     0 1.5px 3px 0 rgba(0, 0, 0, 0.15);
   box-sizing: content-box;
-  margin: auto;
-  position: relative;
+  border: 2px solid grey;
 }
 #fundal-linkedin {
   width: 100%;
 }
+
 #moto {
   color: darkgreen;
 }
