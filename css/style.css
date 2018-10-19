@@ -22,15 +22,6 @@ body {
   padding-right: 28%;
 }
 
-#content div {
-  border-color: lightgreen;
-}
-#content-wrap {
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: white;
-}
-
 .page-block {
   background-color: white;
   padding: 24px;
