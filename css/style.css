@@ -79,3 +79,7 @@ table {
   width: 200px;
   text-align: center;
 }
+
+#footer {
+  clear: both;
+}
