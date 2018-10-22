@@ -12,40 +12,6 @@ body {
     "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-#left-sidebar {
-  width: 25%;
-  float: right;
-}
-
-#content {
-  border-color: green;
-  padding-right: 28%;
-}
-
-.page-block {
-  background-color: white;
-  padding: 24px;
-  margin: 10px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
-}
-
-#poza_cv {
-  width: 152px;
-  border-radius: 50%;
-  float: left;
-  box-shadow: inset 0 1.5px 3px 0 rgba(0, 0, 0, 0.15),
-    0 1.5px 3px 0 rgba(0, 0, 0, 0.15);
-  box-sizing: content-box;
-  border: 2px solid grey;
-}
-#fundal-linkedin {
-  width: 100%;
-}
-
-#moto {
-  color: darkgreen;
-}
 #top-menu-bar {
   text-align: center;
   color: #fff;
@@ -72,6 +38,41 @@ body {
 #top-menu-bar a:hover {
   color: #334455;
   background-color: #ffffff;
+}
+
+#right-sidebar {
+  width: 25%;
+  float: right;
+}
+
+#content {
+  border-color: green;
+  padding-right: 28%;
+}
+
+.page-block {
+  background-color: white;
+  padding: 24px;
+  margin: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+.profile-backgound-image {
+  background: url(https://lh3.googleusercontent.com/i9S0Cbo__Pc0LOPQb3V4Kna7dFpgCescqpVjgElwyvICJvRI_HzLE1Adge5WlOBUl3dTYfumdyn6_xgI8T5TMdhn6P3lW6-0GsR_loXbb-5D4kW4nlDTtk76KAeDxUZCHo4yASX9QKYitj04kxc5ro9vMY-C0h4sFlDn5VLIU11gRGvI1pnua_bJTzeTct8zuma4XTN4DSuTIfjYCNrVC8oeroA_U04rbAJ1rEbclkrKrBjpo_CoN9rXGza2_BPSxZHOR69brJ5iOc71fpuHx3SZ-H8DEFL23L6XY0QZJoVOlMalpqS-NQFoKloTIswp3m-MZfLoTZgbt9TfcjSo6lRmS-Sl3oiv1sHNHlWlzPEEsYe6OzX8NBcqvfp6B_3tW0QsUnKvCQ4qETGGpXZaNORPp4-ZnAUtCXfbbXQBIrXo7Vl_9tOmFp8JHi8iiabj_EoqKwcf74ATnXA3DJAJvY-qItLjnckcPYdLG_sxwV96nIb9fsrxqdCLxfM5DlBjk-0BKlhzLhGw2dpx8VUwaP-lPcVNCljVFzhuzxtRggNSkCTsMWjhfL9QLcFPuDQDFyhBBwGNyIrZo_mVeguWwuKEA9RFY5MMLe7aU51BgRaz2a7vdOJ_I47sU-RRoSp2=w1798-h297-no);
+  margin: 10px;
+}
+
+#poza_cv {
+  width: 152px;
+  border-radius: 50%;
+  border: 2px solid grey;
+}
+#fundal-linkedin {
+  width: 100%;
+}
+
+#moto {
+  color: darkgreen;
 }
 
 table {
