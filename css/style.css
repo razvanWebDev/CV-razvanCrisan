@@ -5,7 +5,7 @@
 } */
 /*--------remove above blocks afrter finished---------*/
 body {
-  background-color: white;
+  background-color: whitesmoke;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
     "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
@@ -38,6 +38,7 @@ body {
 #top-menu-bar a:hover {
   color: #334455;
   background-color: #ffffff;
+  transition-duration: 300ms;
 }
 
 #right-sidebar {
@@ -46,7 +47,6 @@ body {
 }
 
 #content {
-  border-color: green;
   padding-right: 28%;
 }
 
@@ -58,8 +58,14 @@ body {
   border-radius: 2px;
 }
 .profile-backgound-image {
-  background: url(https://lh3.googleusercontent.com/i9S0Cbo__Pc0LOPQb3V4Kna7dFpgCescqpVjgElwyvICJvRI_HzLE1Adge5WlOBUl3dTYfumdyn6_xgI8T5TMdhn6P3lW6-0GsR_loXbb-5D4kW4nlDTtk76KAeDxUZCHo4yASX9QKYitj04kxc5ro9vMY-C0h4sFlDn5VLIU11gRGvI1pnua_bJTzeTct8zuma4XTN4DSuTIfjYCNrVC8oeroA_U04rbAJ1rEbclkrKrBjpo_CoN9rXGza2_BPSxZHOR69brJ5iOc71fpuHx3SZ-H8DEFL23L6XY0QZJoVOlMalpqS-NQFoKloTIswp3m-MZfLoTZgbt9TfcjSo6lRmS-Sl3oiv1sHNHlWlzPEEsYe6OzX8NBcqvfp6B_3tW0QsUnKvCQ4qETGGpXZaNORPp4-ZnAUtCXfbbXQBIrXo7Vl_9tOmFp8JHi8iiabj_EoqKwcf74ATnXA3DJAJvY-qItLjnckcPYdLG_sxwV96nIb9fsrxqdCLxfM5DlBjk-0BKlhzLhGw2dpx8VUwaP-lPcVNCljVFzhuzxtRggNSkCTsMWjhfL9QLcFPuDQDFyhBBwGNyIrZo_mVeguWwuKEA9RFY5MMLe7aU51BgRaz2a7vdOJ_I47sU-RRoSp2=w1798-h297-no);
+  background: white
+    url(https://lh3.googleusercontent.com/i9S0Cbo__Pc0LOPQb3V4Kna7dFpgCescqpVjgElwyvICJvRI_HzLE1Adge5WlOBUl3dTYfumdyn6_xgI8T5TMdhn6P3lW6-0GsR_loXbb-5D4kW4nlDTtk76KAeDxUZCHo4yASX9QKYitj04kxc5ro9vMY-C0h4sFlDn5VLIU11gRGvI1pnua_bJTzeTct8zuma4XTN4DSuTIfjYCNrVC8oeroA_U04rbAJ1rEbclkrKrBjpo_CoN9rXGza2_BPSxZHOR69brJ5iOc71fpuHx3SZ-H8DEFL23L6XY0QZJoVOlMalpqS-NQFoKloTIswp3m-MZfLoTZgbt9TfcjSo6lRmS-Sl3oiv1sHNHlWlzPEEsYe6OzX8NBcqvfp6B_3tW0QsUnKvCQ4qETGGpXZaNORPp4-ZnAUtCXfbbXQBIrXo7Vl_9tOmFp8JHi8iiabj_EoqKwcf74ATnXA3DJAJvY-qItLjnckcPYdLG_sxwV96nIb9fsrxqdCLxfM5DlBjk-0BKlhzLhGw2dpx8VUwaP-lPcVNCljVFzhuzxtRggNSkCTsMWjhfL9QLcFPuDQDFyhBBwGNyIrZo_mVeguWwuKEA9RFY5MMLe7aU51BgRaz2a7vdOJ_I47sU-RRoSp2=w1798-h297-no);
+  background-repeat: repeat-x;
+  /* background-size: vw; */
   margin: 10px;
+  padding: 24px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 #poza_cv {
@@ -78,8 +84,10 @@ body {
 table {
   width: 200px;
   text-align: center;
+  border-radius: 8px;
 }
 
 #footer {
   clear: both;
+  margin-top: 40px;
 }
