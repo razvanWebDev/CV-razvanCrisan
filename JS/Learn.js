@@ -1,49 +1,170 @@
-console.info(0);
+function learnVariables() {
+  console.info(0);
 
-function sayWelcome() {
-  console.info("Salut " + prenume + ", bine ai venit la noi!");
+  function sayWelcome() {
+    console.info("Salut " + prenume + ", bine ai venit la noi!");
+  }
+
+  var nume = "Crisan";
+  var prenume = "Razvan";
+  var owner = "Razvan's";
+  var msg1 = "Ai zis Crisan";
+  var msg2 = 'Nu, am zis "Razvan"';
+  var template = `Text cu ghilimele " sau simple'`;
+
+  var skills = ["html", "css", "js"];
+
+  prenume = "Razvi";
+
+  console.info("toate variabilele au fost initializate");
+  console.log(nume);
+  console.debug("Cum te cheama? " + prenume);
+  sayWelcome();
+
+  // schimb valutar
+  var cursEUR = 4.5;
+  var myEUR = 20;
+  var myRON = 0;
+  var friendEUR = 100;
+  var friendRON = 0;
+
+  myRON = myEUR * cursEUR;
+  console.info("eu am " + myRON + " RON");
+
+  friendRON = friendEUR * cursEUR * 0.99;
+  console.info("tu ai " + friendRON + " RON");
 }
 
-var nume = "Crisan";
-var prenume = "Razvan";
-var owner = "Razvan's";
-var msg1 = "Ai zis Crisan";
-var msg2 = 'Nu, am zis "Razvan"';
-var template = `Text cu ghilimele " sau simple'`;
+function learnIterators() {
+  function countTo(n) {
+    console.info("sa numaram pana la " + n);
+    //for(init; condition; after)
+    for (var i = 1; i <= n; i++) {
+      console.info(i);
+    }
+  }
 
-var skills = ["html", "css", "js"];
+  function countDown(n) {
+    var i = n;
+    for (; i > 0; ) {
+      console.info(i);
+      i--;
+    }
 
-prenume = "Razvi";
+    //SAU simplificat
+    while (n > 0) {
+      console.info(n);
+      n--;
+    }
+  }
+  countDown(10);
+  countTo(10);
+}
+// learnIterators(); //apelez functia!
 
-console.info("toate variabilele au fost initializate");
-console.log(nume);
-console.debug("Cum te cheama? " + prenume);
-sayWelcome();
+// learnVariables();
 
-// schimb valutar
-var cursEUR = 4.5;
-var myEUR = 20;
-var myRON = 0;
-var friendEUR = 100;
-var friendRON = 0;
+function extract2FromATM(amount) {
+  var disponibil = 1000;
+  var comision = amount * 0.01;
+  var sumaRamasa = disponibil - amount - comision;
 
-myRON = myEUR * cursEUR;
-console.info("eu am " + myRON + " RON");
+  if (amount % 10 !== 0) {
+    console.info("==== ==== ==== ==== ====");
+    console.warn("Suma extrasa tebuie sa fie multiplu de 10!");
+    console.info("==== ==== ==== ==== ====");
+  } else {
+    console.info("==== ==== ==== ==== ====");
 
-friendRON = friendEUR * cursEUR * 0.99;
-console.info("tu ai " + friendRON + " RON");
+    if (disponibil < amount + comision) {
+      console.warn("Fonduri insuficiente!");
+    } else {
+      if (comision < 2.5) {
+        comision = 2.5;
+        console.warn("comision minim aplicat");
+      }
 
-function extractFromATM(ammount) {
-  console.info("==== ==== ==== ==== ====");
-  console.info("suma extrasa este: " + ammount);
+      console.info("suma extrasa este: " + amount + " Lei");
+      console.info("comision aplicat: " + comision);
+      console.info("Suma ramasa in cont: " + sumaRamasa + " Lei");
+    }
+    console.info("==== ==== ==== ==== ====");
+  }
+  amount = sumaRamasa; // de rezolvat
+}
+
+// extract2FromATM(600);
+
+var atmFunds = 50000;
+var funds = 5000; // var globala (nu a fost definita in int functiei)
+
+function getExtraxtFee(ammount) {
   var comision = ammount * 0.01;
   if (comision < 2.5) {
     comision = 2.5;
     console.warn("comision minim aplicat");
   }
+  return comision;
+}
+// TODO implement
+function checkExtractPermissions() {
+  return true;
+}
+
+function extractFromATM(ammount) {
+  console.info("==== ==== ==== ==== ====");
+  console.info("suma extrasa este: " + ammount);
+  var comision = getExtraxtFee(ammount);
+
+  var totalExtract = ammount + comision;
+
+  if (totalExtract > funds) {
+    console.error("insufficient funds");
+    return;
+  }
+  if (atmFunds < totalExtract) {
+    console.error("ATM insufficient funds!");
+    return;
+  }
+
+  funds = funds - totalExtract;
+  atmFunds = atmFunds - ammount;
+  // atmFunds -= ammount;   versiunea simplificata pt operatiunea de mai sus
+
   console.info("comision aplicat: " + comision);
+  console.info("Sold curent: " + funds);
   console.info("==== ==== ==== ==== ====");
 }
 
-extractFromATM(1000);
-extractFromATM(100);
+// extractFromATM(1005);
+// extractFromATM(100000);
+// extractFromATM(3000);
+// extractFromATM(3000);
+// extractFromATM(100);
+
+function sumNumbers(a, b) {
+  var c = 1;
+  while (c <= a + b) {
+    console.info(c);
+    c++;
+  }
+}
+// sumNumbers(2, 3);
+
+function addNumbers(a, b) {
+  console.info("Numaram");
+  for (var c = 1; c <= a; c++) {
+    console.info(c);
+  }
+
+  console.info("La care adaugam");
+
+  while (b-- >= 0) {
+    c++;
+    console.info("A mai ramas " + b);
+    console.info(c);
+  }
+}
+addNumbers(6, 7);
+// de revazut functia de mai sus LIPSESTE 7
+function sumSeveralNumbers() {}
