@@ -84,7 +84,7 @@ function extract2FromATM(amount) {
         comision = 2.5;
         console.warn("comision minim aplicat");
       }
-=======
+
 
   var nume = "Crisan";
   var prenume = "Razvan";
@@ -112,8 +112,8 @@ function extract2FromATM(amount) {
     }
     console.info("==== ==== ==== ==== ====");
   }
-  amount = sumaRamasa; // de rezolvat
-}
+  // amount = sumaRamasa; // de rezolvat
+
 
 // extract2FromATM(600);
 
