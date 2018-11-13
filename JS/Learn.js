@@ -5,6 +5,7 @@ function learnVariables() {
     console.info("Salut " + prenume + ", bine ai venit la noi!");
   }
 
+
   var nume = "Crisan";
   var prenume = "Razvan";
   var owner = "Razvan's";
@@ -83,6 +84,27 @@ function extract2FromATM(amount) {
         comision = 2.5;
         console.warn("comision minim aplicat");
       }
+=======
+
+  var nume = "Crisan";
+  var prenume = "Razvan";
+  var owner = "Razvan's";
+  var msg1 = "Ai zis Crisan";
+  var msg2 = 'Nu, am zis "Razvan"';
+  var template = `Text cu ghilimele " sau simple'`;
+
+  var skills = ["html", "css", "js"];
+
+  prenume = "Razvi";
+
+  console.info("toate variabilele au fost initializate");
+  console.log(nume);
+  console.debug("Cum te cheama? " + prenume);
+  sayWelcome();
+}
+
+// learnVariables();
+
 
       console.info("suma extrasa este: " + amount + " Lei");
       console.info("comision aplicat: " + comision);
@@ -97,6 +119,43 @@ function extract2FromATM(amount) {
 
 var atmFunds = 50000;
 var funds = 5000; // var globala (nu a fost definita in int functiei)
+
+
+
+function extract2FromATM(amount) {
+  var disponibil = 1000;
+  var comision = amount * 0.01;
+  var sumaRamasa = disponibil - amount - comision;
+
+  if (amount % 10 !== 0) {
+    console.info("==== ==== ==== ==== ====");
+    console.warn("Suma extrasa tebuie sa fie multiplu de 10!");
+    console.info("==== ==== ==== ==== ====");
+  } else {
+    console.info("==== ==== ==== ==== ====");
+
+    if (disponibil < amount + comision) {
+      console.warn("Fonduri insuficiente!");
+    } else {
+      if (comision < 2.5) {
+        comision = 2.5;
+        console.warn("comision minim aplicat");
+      }
+
+      console.info("suma extrasa este: " + amount + " Lei");
+      console.info("comision aplicat: " + comision);
+      console.info("Suma ramasa in cont: " + sumaRamasa + " Lei");
+    }
+    console.info("==== ==== ==== ==== ====");
+  }
+  amount = sumaRamasa; // de rezolvat
+}
+
+extract2FromATM(600);
+
+var atmFunds = 50000;
+var funds = 5000; // var globala (nu a fost definita in int functiei)
+
 
 function getExtraxtFee(ammount) {
   var comision = ammount * 0.01;
@@ -136,6 +195,7 @@ function extractFromATM(ammount) {
   console.info("==== ==== ==== ==== ====");
 }
 
+
 // extractFromATM(1005);
 // extractFromATM(100000);
 // extractFromATM(3000);
@@ -168,3 +228,6 @@ function addNumbers(a, b) {
 addNumbers(6, 7);
 // de revazut functia de mai sus LIPSESTE 7
 function sumSeveralNumbers() {}
+
+
+
