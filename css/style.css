@@ -4,6 +4,21 @@
   padding: 1;
 } */
 /*--------remove above blocks afrter finished---------*/
+
+@media only screen and (max-width: 700px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+  @media only screen and (min-width: 1224px) {
+    body {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+  }
+
+
 body {
   background-color: whitesmoke;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -16,6 +31,7 @@ body {
   text-align: center;
   color: #fff;
   background-color: #334455;
+
 }
 
 #top-menu-bar li {
@@ -53,28 +69,35 @@ body {
 .page-block {
   background-color: white;
   padding: 24px;
-  margin: 10px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+ 
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 2px;
 }
-.profile-backgound-image {
-  background: white
-    url(https://lh3.googleusercontent.com/i9S0Cbo__Pc0LOPQb3V4Kna7dFpgCescqpVjgElwyvICJvRI_HzLE1Adge5WlOBUl3dTYfumdyn6_xgI8T5TMdhn6P3lW6-0GsR_loXbb-5D4kW4nlDTtk76KAeDxUZCHo4yASX9QKYitj04kxc5ro9vMY-C0h4sFlDn5VLIU11gRGvI1pnua_bJTzeTct8zuma4XTN4DSuTIfjYCNrVC8oeroA_U04rbAJ1rEbclkrKrBjpo_CoN9rXGza2_BPSxZHOR69brJ5iOc71fpuHx3SZ-H8DEFL23L6XY0QZJoVOlMalpqS-NQFoKloTIswp3m-MZfLoTZgbt9TfcjSo6lRmS-Sl3oiv1sHNHlWlzPEEsYe6OzX8NBcqvfp6B_3tW0QsUnKvCQ4qETGGpXZaNORPp4-ZnAUtCXfbbXQBIrXo7Vl_9tOmFp8JHi8iiabj_EoqKwcf74ATnXA3DJAJvY-qItLjnckcPYdLG_sxwV96nIb9fsrxqdCLxfM5DlBjk-0BKlhzLhGw2dpx8VUwaP-lPcVNCljVFzhuzxtRggNSkCTsMWjhfL9QLcFPuDQDFyhBBwGNyIrZo_mVeguWwuKEA9RFY5MMLe7aU51BgRaz2a7vdOJ_I47sU-RRoSp2=w1798-h297-no);
-  background-repeat: repeat-x;
-  /* background-size: vw; */
-  margin: 10px;
-  padding: 24px;
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+#header {
+  padding-top: 0;
+  padding-bottom: 5px;
+  background-image:   url(https://wallpapersite.com/images/pages/pic_h/4192.jpg);
+  background-repeat: no-repeat;
+  background-position-y: -410px;
+  background-size: 100%;
+}
+
+
+
+#header h1 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#header p {
+  margin-top: 0;
 }
 
 #poza_cv {
-  width: 152px;
+  width: 160px;
   border-radius: 50%;
-  border: 2px solid grey;
-}
-#fundal-linkedin {
-  width: 100%;
+  border: 2px solid silver;
+  margin-top: 80px;
 }
 
 #moto {
