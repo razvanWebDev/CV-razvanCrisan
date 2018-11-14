@@ -20,11 +20,44 @@
 
 
 body {
+  padding-top: 0;
   background-color: whitesmoke;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
     "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#header {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 5px;
+  background-image:   url(https://wallpapersite.com/images/pages/pic_h/4192.jpg);
+  background-repeat: no-repeat;
+  background-position-y: -410px;
+  background-size: 100%;
+}
+
+
+
+#header h1 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#header p {
+  margin-top: 0;
+}
+
+#poza_cv {
+  width: 160px;
+  border-radius: 50%;
+  border: 2px solid silver;
+  margin-top: 80px;
+}
+
+#moto {
+  color: darkgreen;
 }
 
 #top-menu-bar {
@@ -73,36 +106,7 @@ body {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 2px;
 }
-#header {
-  padding-top: 0;
-  padding-bottom: 5px;
-  background-image:   url(https://wallpapersite.com/images/pages/pic_h/4192.jpg);
-  background-repeat: no-repeat;
-  background-position-y: -410px;
-  background-size: 100%;
-}
 
-
-
-#header h1 {
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-
-#header p {
-  margin-top: 0;
-}
-
-#poza_cv {
-  width: 160px;
-  border-radius: 50%;
-  border: 2px solid silver;
-  margin-top: 80px;
-}
-
-#moto {
-  color: darkgreen;
-}
 
 table {
   width: 200px;
