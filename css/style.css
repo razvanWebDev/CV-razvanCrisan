@@ -9,18 +9,19 @@
   body {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 0;
   }
 }
   @media only screen and (min-width: 1224px) {
     body {
       padding-left: 200px;
       padding-right: 200px;
+      padding-top: 0;
     }
   }
 
 
 body {
-  padding-top: 0;
   background-color: whitesmoke;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
@@ -29,24 +30,26 @@ body {
 }
 
 #header {
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 5px;
-  background-image:   url(https://wallpapersite.com/images/pages/pic_h/4192.jpg);
+  height: 150px;
+  margin-bottom: 170px;
+  padding: 24px;
+  border-radius: 2px;
+  background-image: url(https://wallpapersite.com/images/pages/pic_h/4192.jpg);
   background-repeat: no-repeat;
-  background-position-y: -410px;
-  background-size: 100%;
+  background-size:1200px ;
 }
 
 
 
 #header h1 {
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 0;
+  
 }
 
 #header p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 #poza_cv {
@@ -54,6 +57,7 @@ body {
   border-radius: 50%;
   border: 2px solid silver;
   margin-top: 80px;
+  margin-bottom: 0px;
 }
 
 #moto {
@@ -102,9 +106,9 @@ body {
 .page-block {
   background-color: white;
   padding: 24px;
- 
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 5px 5px rgba(0, 0, 0, 0.3);
+  
 }
 
 
