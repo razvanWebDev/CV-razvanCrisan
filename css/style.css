@@ -52,6 +52,14 @@ body {
   margin-bottom: 0;
 }
 
+.picture-zoom-header {
+  transition: transform .2s ease-in-out;
+}
+
+.picture-zoom-header:hover { 
+  transform: scale(1.1); 
+}
+
 #poza_cv {
   width: 160px;
   border-radius: 50%;
@@ -109,9 +117,7 @@ body {
   padding: 24px;
   border-radius: 2px;
   box-shadow: 5px 5px 7px -2px rgba(0,0,0,0.7);  
-  
 }
-
 
 
 table {
@@ -172,9 +178,30 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 6px;
 }
 
+#education-page a {
+  text-decoration: none;
+}
 
 #footer {
   clear: both;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+.link-hover:hover {
+color: black;
+font-weight:bold;
+
+}
+
+.picture-zoom-footer {
+  transition: transform .1s ease-in-out;
+}
+
+.picture-zoom-footer:hover { 
+  transform: scale(1.2); 
 }
