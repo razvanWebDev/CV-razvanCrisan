@@ -1,9 +1,13 @@
+function $(id) {
+  return document.getElementById(id);
+}
+
 function hide(id) {
-  document.getElementById(id).style.display = "none";
+  $(id).style.display = "none";
 }
 
 function show (id) {
-  document.getElementById(id).style.display = "block";
+  $(id).style.display = "block";
 }
 
 function showHomePage(){
@@ -11,7 +15,7 @@ function showHomePage(){
   hide("skills-page");
   hide("education-page");
   hide("languages-page");
-  hided("experience-page");
+  hide("experience-page");
   hide("hobbies-page");
 }
 
@@ -60,9 +64,9 @@ function showHobbiesPage(){
   show("hobbies-page");
 }
 
-document.getElementById("home-menu").onclick = showHomePage;
-document.getElementById("skills-menu").onclick = showSkillsPage;
-document.getElementById("education-menu").onclick = showEducationPage;
-document.getElementById("languages-menu").onclick = showLanguagesPage;
-document.getElementById("experience-menu").onclick = showExperiencePage;
-document.getElementById("hobbies-menu").onclick = showHobbiesPage;
+$("home-menu").onclick = showHomePage;
+$("skills-menu").onclick = showSkillsPage;
+$("education-menu").onclick = showEducationPage;
+$("languages-menu").onclick = showLanguagesPage;
+$("experience-menu").onclick = showExperiencePage;
+$("hobbies-menu").onclick = showHobbiesPage;
