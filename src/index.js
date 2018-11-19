@@ -10,63 +10,22 @@ function show (id) {
   $(id).style.display = "block";
 }
 
-function showHomePage(){
-  show("home-page");
-  hide("skills-page");
-  hide("education-page");
-  hide("languages-page");
-  hide("experience-page");
-  hide("hobbies-page");
+
+function hideAllPages () {
+  var pages = document.querySelectorAll(".page-block");
+  for (var i = 0; i < pages.length; i++) {
+    pages[i].style.display = "none";
+  }
 }
 
-function showSkillsPage(){
-  hide("home-page");
-  show("skills-page");
-  hide("education-page");
-  hide("languages-page");
-  hide("experience-page");
-  hide("hobbies-page");
+var links = document.querySelectorAll("#top-menu-bar a");
+for (var i = 0; i < links.length; i++ ) {
+  links[i].onclick = function(){
+    hideAllPages();
+    var page = this.getAttribute("data-page");
+    console.info("show page" , page);
+    show(page + "-page");
+  };
 }
 
-function showEducationPage(){
-  hide("home-page");
-  hide("skills-page");
-  show("education-page");
-  hide("languages-page");
-  hide("experience-page");
-  hide("hobbies-page");
-}
-
-function showLanguagesPage(){
-  hide("home-page");
-  hide("skills-page");
-  hide("education-page");
-  show("languages-page");
-  hide("experience-page");
-  hide("hobbies-page");
-}
-
-function showExperiencePage(){
-  hide("home-page");
-  hide("skills-page");
-  hide("education-page");
-  hide("languages-page")
-  show("experience-page");
-  hide("hobbies-page");
-}
-
-function showHobbiesPage(){
-  hide("home-page");
-  hide("skills-page");
-  hide("education-page");
-  hide("languages-page");
-  hide("experience-page");
-  show("hobbies-page");
-}
-
-$("home-menu").onclick = showHomePage;
-$("skills-menu").onclick = showSkillsPage;
-$("education-menu").onclick = showEducationPage;
-$("languages-menu").onclick = showLanguagesPage;
-$("experience-menu").onclick = showExperiencePage;
-$("hobbies-menu").onclick = showHobbiesPage;
+show("home-page");
