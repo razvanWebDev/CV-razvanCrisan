@@ -1,55 +1,63 @@
+function hide(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+function show (id) {
+  document.getElementById(id).style.display = "block";
+}
+
 function showHomePage(){
-  document.getElementById("home-page").style.display = "block";
-  document.getElementById("skills-page").style.display = "none";
-  document.getElementById("education-page").style.display = "none";
-  document.getElementById("languages-page").style.display = "none";
-  document.getElementById("experience-page").style.display = "none";
-  document.getElementById("hobbies-page").style.display = "none";
+  show("home-page");
+  hide("skills-page");
+  hide("education-page");
+  hide("languages-page");
+  hided("experience-page");
+  hide("hobbies-page");
 }
 
 function showSkillsPage(){
-  document.getElementById("home-page").style.display = "none";
-  document.getElementById("skills-page").style.display = "block";
-  document.getElementById("education-page").style.display = "none";
-  document.getElementById("languages-page").style.display = "none";
-  document.getElementById("experience-page").style.display = "none";
-  document.getElementById("hobbies-page").style.display = "none";
+  hide("home-page");
+  show("skills-page");
+  hide("education-page");
+  hide("languages-page");
+  hide("experience-page");
+  hide("hobbies-page");
 }
 
 function showEducationPage(){
-  document.getElementById("home-page").style.display = "none";
-  document.getElementById("skills-page").style.display = "none";
-  document.getElementById("education-page").style.display = "block";
-  document.getElementById("languages-page").style.display = "none";
-  document.getElementById("experience-page").style.display = "none";
-  document.getElementById("hobbies-page").style.display = "none";
+  hide("home-page");
+  hide("skills-page");
+  show("education-page");
+  hide("languages-page");
+  hide("experience-page");
+  hide("hobbies-page");
 }
 
 function showLanguagesPage(){
-  document.getElementById("home-page").style.display = "none";
-  document.getElementById("skills-page").style.display = "none";
-  document.getElementById("education-page").style.display = "none";
-  document.getElementById("languages-page").style.display = "block";
-  document.getElementById("experience-page").style.display = "none";
-  document.getElementById("hobbies-page").style.display = "none";
+  hide("home-page");
+  hide("skills-page");
+  hide("education-page");
+  show("languages-page");
+  hide("experience-page");
+  hide("hobbies-page");
 }
 
 function showExperiencePage(){
-  document.getElementById("home-page").style.display = "none";
-  document.getElementById("skills-page").style.display = "none";
-  document.getElementById("education-page").style.display = "none";
-  document.getElementById("languages-page").style.display = "none";
-  document.getElementById("experience-page").style.display = "block";
-  document.getElementById("hobbies-page").style.display = "none";
+  hide("home-page");
+  hide("skills-page");
+  hide("education-page");
+  hide("languages-page")
+  show("experience-page");
+  hide("hobbies-page");
 }
 
 function showHobbiesPage(){
-  document.getElementById("home-page").style.display = "none";
-  document.getElementById("skills-page").style.display = "none";
-  document.getElementById("education-page").style.display = "none";
-  document.getElementById("languages-page").style.display = "none";
-  document.getElementById("experience-page").style.display = "none";
-  document.getElementById("hobbies-page").style.display = "block";
+  hide("home-page");
+  hide("skills-page");
+  hide("education-page");
+  hide("languages-page");
+  hide("experience-page");
+  show("hobbies-page");
 }
 
 document.getElementById("home-menu").onclick = showHomePage;

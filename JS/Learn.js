@@ -213,31 +213,39 @@ function sumNumbers(a, b) {
 
 function addNumbers(a, b) {
   console.info("Numaram pana la " + a);
-  for (var c = 1; c <= a; c++) {}
+  for (var c = 1; c <= a; c++) { }
 
-  console.info("Apoi din " + b + " luam 1 si pe care il adaugam la " + (c-1) + ", am mai ramas cu " + (b-1) + ", Iar totalul este " + c);
+  console.info("Apoi din " + b + " luam 1 si pe care il adaugam la " + (c - 1) + ", am mai ramas cu " + (b - 1) + ", Iar totalul este " + c);
 
   while (b-- > 1) {
     c++;
-    console.info("Din " + b + " luam 1 si pe care il adaugam la " + (c-1) + ", am mai ramas cu " + (b-1) + ", Iar totalul este " + c);
+    console.info("Din " + b + " luam 1 si pe care il adaugam la " + (c - 1) + ", am mai ramas cu " + (b - 1) + ", Iar totalul este " + c);
   }
- 
+
 }
 // addNumbers(2, 7);
 
 function addNumbers2(a, b) {
   console.info("Numaram pana la " + a);
-  console.info("Apoi din " + b + " luam 1 si pe care il adaugam la " + a + ", am mai ramas cu " + (b-1) + ", Iar totalul este " + (a+1));
+  console.info("Apoi din " + b + " luam 1 si pe care il adaugam la " + a + ", am mai ramas cu " + (b - 1) + ", Iar totalul este " + (a + 1));
 
   while (b-- > 1) {
     a++;
-    console.info("Din " + b + " luam 1 si pe care il adaugam la " + a + ", am mai ramas cu " + (b-1) + ", Iar totalul este " + (a+1));
-  } 
+    console.info("Din " + b + " luam 1 si pe care il adaugam la " + a + ", am mai ramas cu " + (b - 1) + ", Iar totalul este " + (a + 1));
+  }
 }
-addNumbers2(3, 7);
+// addNumbers2(5, 7);
 
 
 function sumSeveralNumbers() { }
 
+// de revazut functia de mai jos!!!
+function sumArray(array) {
+  var array = [a, b, c, d];
+  var i = arr.length;
+  var sum = 0;
+  while (--i) sum += arr[i];
+  return sum;
+}
 
-
+// sumArray(1,2,3)
