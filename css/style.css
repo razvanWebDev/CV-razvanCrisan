@@ -29,6 +29,10 @@ body {
     "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h2 {
+  color: #2f373f;
+}
+
 #header {
   height: 145px;
   margin-bottom: 170px;
@@ -196,6 +200,7 @@ table tr:last-child td:last-child {
 .link-hover:hover {
 color: black;
 font-weight:bold;
+transition-duration: 80ms;
 
 }
 
