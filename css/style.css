@@ -14,8 +14,8 @@
 }
   @media only screen and (min-width: 1224px) {
     body {
-      padding-left: 200px;
-      padding-right: 200px;
+      padding-left: 100px;
+      padding-right: 100px;
       padding-top: 0;
     }
   }
@@ -40,7 +40,7 @@ h2 {
   border-radius: 2px;
   background-image: url(https://wallpapersite.com/images/pages/pic_h/4192.jpg);
   background-repeat: no-repeat;
-  background-size:1200px ;
+  background-size:1400px ;
 }
 
 
