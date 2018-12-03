@@ -31,11 +31,21 @@ function initMenu() {
 }
 
 function initSkillsPage() {
-  var skills = ['js', 'html', 'css'];
+  var skills = [
+    ['js', 7, "Andrei"],
+     ['html', 6, "Andreea"],
+      ['css', 1, ""]
+    ];
   var resultList = document.querySelector('#skills-page ul');
 
 var listItems = skills.map(function(skill) {
-  return `<li>${skill.toUpperCase()}</li>`;
+  var endorsedBy = " -Endorsed by";
+  if (skill[2] == "") {endorsedBy = "";}
+
+  var name = skill[0].toUpperCase();
+  return `<li>${name}<span style="color:gray"> -${skill[1]} ${endorsedBy}</span>
+  ${skill[2]}
+  </li>`;
 })
 
   
