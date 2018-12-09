@@ -36,4 +36,6 @@ function initSkillsPage() {
 initMenu();
 $('#skills-page').show();
 
+$.ajax ('data/skills.json');
+
 initSkillsPage();
