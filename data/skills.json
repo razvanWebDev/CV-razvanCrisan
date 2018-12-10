@@ -1,1 +1,17 @@
-[1, 2, 3]
+[
+    {
+        "name": "js",
+        "endorsments": 7,
+        "endorsedBy": "Andrei"
+    },
+    {
+        "name": "HTML",
+        "endorsments": 6,
+        "endorsedBy": ""
+    },
+    {
+        "name": "css",
+        "endorsments": 2,
+        "endorsedBy": ""
+    }
+]

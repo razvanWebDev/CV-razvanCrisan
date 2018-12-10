@@ -9,12 +9,7 @@ function initMenu() {
   }
 }
 
-function initSkillsPage() {
-  var skills = [
-    { name: 'js', endorsments: 7, endorsedBy: 'Andrei' },
-    { name: 'HTML', endorsments: 6, endorsedBy: '' },
-    { name: 'css', endorsments: 2, endorsedBy: '' },
-  ];
+function displaySkills(skills) {
   var resultList = document.querySelector('#skills-page ul');
 
   var listItems = skills.map(function (skill) {
@@ -33,9 +28,20 @@ function initSkillsPage() {
   resultList.innerHTML = listItems.join('');
 }
 
+function initSkillsPage() {
+
+
+  $.ajax('data/skills.json').done(function (skills) {
+    console.info('file data', skills);
+    displaySkills(skills);
+  });
+
+
+}
+
 initMenu();
 $('#skills-page').show();
 
-$.ajax ('data/skills.json');
+$.ajax('data/skills.json');
 
 initSkillsPage();
