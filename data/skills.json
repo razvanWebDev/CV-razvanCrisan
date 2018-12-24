@@ -1,17 +1,27 @@
 [
     {
-        "name": "js",
-        "endorsments": 7,
-        "endorsedBy": "Andrei"
-    },
-    {
-        "name": "HTML",
-        "endorsments": 6,
+        "name": "Java Script",
+        "endorsments": 0,
         "endorsedBy": ""
     },
     {
-        "name": "css",
-        "endorsments": 2,
+        "name": "HTML",
+        "endorsments": 0,
+        "endorsedBy": ""
+    },
+    {
+        "name": "CSS",
+        "endorsments": 0,
+        "endorsedBy": ""
+    },
+    {
+        "name": "Microsoft Office",
+        "endorsments": 0,
+        "endorsedBy": ""
+    },
+    {
+        "name": "Saga C",
+        "endorsments": 0,
         "endorsedBy": ""
     }
 ]

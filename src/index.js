@@ -18,7 +18,7 @@ function displaySkills(skills) {
       endorsedBy = "";
     }
 
-    var name = skill.name.toUpperCase();
+    var name = skill.name;
 
     return `<li>${name}<span style="color:gray"> -${skill.endorsments} ${endorsedBy}</span>
   ${skill.endorsedBy}
@@ -40,7 +40,7 @@ function initSkillsPage() {
 }
 
 initMenu();
-$('#skills-page').show();
+$('#home-page').show();
 
 $.ajax('data/skills.json');
 

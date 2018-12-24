@@ -61,7 +61,7 @@ function learnIterators() {
   countDown(10);
   countTo(10);
 }
-// learnIterators(); //apelez functia!
+// learnIterators(); //
 
 // learnVariables();
 
