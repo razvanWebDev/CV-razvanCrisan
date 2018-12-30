@@ -16,7 +16,9 @@ function displaySkills(skills) {
     if (skill.endorsedBy == "") {
       endorsedBy = "";
     }
-
+    if (skill.endorsments == 0){
+      skill.endorsments == ""
+    }
     var name = skill.name;
 
     return `<li>${name}<span style="color:gray"> -${skill.endorsments} ${endorsedBy}</span>
