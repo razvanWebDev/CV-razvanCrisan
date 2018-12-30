@@ -4,14 +4,13 @@ function initMenu() {
     links[i].onclick = function () {
       $('.page-block').hide();
       var page = this.getAttribute("data-page");
-      $('#' + page + '-page').show();
+      $('#' + page + '-page').fadeIn();
     };
   }
 }
 
 function displaySkills(skills) {
   var resultList = document.querySelector('#skills-page ul');
-
   var listItems = skills.map(function (skill) {
     var endorsedBy = " - Endorsed by";
     if (skill.endorsedBy == "") {
@@ -29,19 +28,11 @@ function displaySkills(skills) {
 }
 
 function initSkillsPage() {
-
-
   $.ajax('data/skills.json').done(function (skills) {
-    console.info('file data', skills);
     displaySkills(skills);
   });
-
-
 }
 
 initMenu();
 $('#home-page').show();
-
-$.ajax('data/skills.json');
-
 initSkillsPage();
