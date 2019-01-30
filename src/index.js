@@ -19,9 +19,11 @@ function displaySkills(skills) {
     
     var name = skill.name;
 
-    return `<li>${name}<span style="color:gray"> -${skill.endorsments} ${endorsedBy}</span>
-  ${skill.endorsedBy}
-  </li>`;
+  //   return `<li>${name}<span style="color:gray"> -${skill.endorsments} ${endorsedBy}</span>
+  // ${skill.endorsedBy}
+  // </li>`;
+
+  return `<li>${name}</li>`;
   })
 
   resultList.innerHTML = listItems.join('');
