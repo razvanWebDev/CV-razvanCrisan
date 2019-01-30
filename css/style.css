@@ -17,7 +17,7 @@
 
 
 body {
-  background-color: whitesmoke;
+  background: url(../data/img/cream_pixels_@2X.png);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
     "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
@@ -51,12 +51,12 @@ h2 {
   margin-bottom: 0;
 }
 
-.picture-zoom-header {
+#poza_cv {
   transition: transform .2s ease-in-out;
 }
 
-.picture-zoom-header:hover { 
-  transform: scale(1.1); 
+#poza_cv:hover { 
+  transform: scale(1.5); 
 }
 
 #poza_cv {
@@ -68,7 +68,7 @@ h2 {
 }
 
 #moto {
-  color: darkgreen;
+  color: rgb(6, 78, 6);
 }
 
 #top-menu-bar {
