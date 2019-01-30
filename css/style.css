@@ -68,7 +68,7 @@ h2 {
 }
 
 #moto {
-  color: rgb(6, 78, 6);
+  color: rgb(63, 37, 11);
 }
 
 #top-menu-bar {
@@ -178,25 +178,20 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 6px;
 }
 
-#education-page a {
+a {
   text-decoration: none;
+  color:  rgb(6, 78, 6);
 }
+
+a:hover {
+  color: black;
+  transition-duration: 80ms;
+  }
 
 #footer {
   clear: both;
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-#footer a {
-  text-decoration: none;
-}
-
-.link-hover:hover {
-color: black;
-font-weight:bold;
-transition-duration: 80ms;
-
 }
 
 .picture-zoom-footer {
