@@ -48,7 +48,7 @@ h2 {
   border-radius: 5px;
   background: url(/src/img/header.Backgound.jpg);
   background-repeat: no-repeat;
-  background-size:1400px ;
+  background-size: cover;
 }
 
 
@@ -148,6 +148,7 @@ h2 {
   }
 
 table {
+  margin-top: 25px;
   border-collapse: separate;
   border-spacing: 0;
   min-width: 350px;
