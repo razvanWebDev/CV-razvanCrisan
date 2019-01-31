@@ -36,5 +36,5 @@ function initSkillsPage() {
 }
 
 initMenu();
-$('#home-page').show();
+$('#skills-page').show();
 initSkillsPage();
