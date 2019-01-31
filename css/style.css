@@ -1,7 +1,7 @@
 @media only screen and (max-width: 700px) {
   body {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-top: 0;
   }
 }
@@ -24,6 +24,17 @@ body {
 
 body, html {
   margin-top: 0px;
+  height: 100%;
+}
+
+#content-wrap {
+  min-height:100%;
+   position:relative;
+}
+
+#content {
+  padding-right: 28%;
+  padding-bottom: 80px;
 }
 
 h2 {
@@ -105,9 +116,6 @@ h2 {
   float: right;
 }
 
-#content {
-  padding-right: 28%;
-}
 
 .page-block {
   display: none;
@@ -210,8 +218,9 @@ a:hover {
 
 #footer {
    clear: both;
-    position: fixed;
-    bottom: 20px;
+    position: absolute;
+    bottom: 25px;
+    
 }
 
 .picture-zoom-footer {
