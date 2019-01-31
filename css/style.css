@@ -15,7 +15,7 @@
 
 
 body {
-  background: url(/data/img/cream_pixels_@2X.png);
+  background: url(/src/img/cream_pixels_@2X.png);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
     "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
@@ -35,7 +35,7 @@ h2 {
   margin-bottom: 150px;
   padding: 24px;
   border-radius: 5px;
-  background: url(/data/img/header.Backgound.jpg);
+  background: url(/src/img/header.Backgound.jpg);
   background-repeat: no-repeat;
   background-size:1400px ;
 }
@@ -112,7 +112,7 @@ h2 {
 .page-block {
   display: none;
   color: white;
-  background: url(/data/img/1280310595990.jpg);
+  background: url(/src/img/1280310595990.jpg);
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover; 
@@ -210,8 +210,8 @@ a:hover {
 
 #footer {
    clear: both;
-    position: absolute;
-    bottom: 30px;
+    position: fixed;
+    bottom: 20px;
 }
 
 .picture-zoom-footer {
