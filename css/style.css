@@ -41,6 +41,32 @@ h2 {
   color: #2f373f;
 }
 
+input[type=email] {
+
+  border: 1px solid #bbb;;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+  border: 1px solid #222;
+  transition: 0.3s;
+}
+
+button {
+  color: #fff;
+  background-color: #334455;
+  border-radius: 3px;
+  border: 1px solid #334455;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: #334455;
+  background-color: #fff;
+}
+
 #header {
   height: 145px;
   margin-bottom: 150px;
