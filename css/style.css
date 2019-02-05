@@ -41,17 +41,34 @@ h2 {
   color: #2f373f;
 }
 
-input[type=email] {
+#sendMsg {
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #334455;
+}
 
+input, textarea {
+  margin-bottom: 10px;
+  width: 100%;
   border: 1px solid #bbb;;
   border-radius: 3px;
   box-sizing: border-box;
+  padding-left: 5px;
+  color: #334455;
 }
 
 textarea:focus, input:focus{
   outline: none;
   border: 1px solid #222;
   transition: 0.3s;
+}
+
+input {
+  height: 25px;
+}
+
+#messageInput {
+  margin-bottom: 5px;
 }
 
 button {
@@ -65,6 +82,10 @@ button {
 button:hover {
   color: #334455;
   background-color: #fff;
+}
+
+#contact button {
+  float: right;
 }
 
 #header {
