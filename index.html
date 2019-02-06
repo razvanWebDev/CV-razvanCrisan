@@ -60,14 +60,14 @@
 				<div>
 					<h2>Contact</h2>
 					<hr>
-					
-					<form>
-						<p id="sendMsg">Hire me!</p>
-						<input type="text" placeholder="Name (required)"><br>
-						<input type="email" placeholder="Email (required)"><br>
-						<textarea id="messageInput"  rows="6" placeholder="Your message here"></textarea>
+					<p id="sendMsg">Hire me!</p>
+					<form action="contactform.php" method="post">
+						
+						<input type="text" name="name" placeholder="Name (required)"><br>
+						<input type="email" name="mail" placeholder="Email (required)"><br>
+						<textarea id="messageInput" name="message"  rows="6" placeholder="Your message here"></textarea>
 						<br>
-						<button>Send</button>
+						<button type="submit" name="submit">Submit</button>
 					</form>
 					<p>Email: crsn_razvan@yahoo.com
 						<br>Phone: +40 755 962 057
