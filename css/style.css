@@ -72,7 +72,6 @@ input {
 }
 
 button {
-  
   color: #334455;
   background-color: #fff;
   border-radius: 3px;
@@ -88,10 +87,6 @@ button {
 button:hover {
   color: #fff;
   background-color: #334455;
-}
-
-#contact button {
-  float: right;
 }
 
 #header {
