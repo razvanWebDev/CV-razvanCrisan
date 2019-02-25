@@ -99,6 +99,9 @@ button:hover {
   background-size: cover;
 }
 
+#motto {
+  float: left;
+}
 
 #header h1 {
   margin-top: 0;
