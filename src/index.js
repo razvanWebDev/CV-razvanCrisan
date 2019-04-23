@@ -3,8 +3,10 @@ function initMenu() {
   for (var i = 0; i < links.length; i++) {
     links[i].onclick = function () {
       $('.page-block').hide();
+      $('.menuButtons').removeClass('current');
       var page = this.getAttribute("data-page");
       $('#' + page + '-page').fadeIn();
+      $('#' + page + '-menu').addClass('current');
     };
   }
 }

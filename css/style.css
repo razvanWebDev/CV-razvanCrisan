@@ -151,20 +151,21 @@ button:hover {
   color: #fff;
 }
 
-#top-menu-bar a:visited {
-  color: #ffffff;
-}
 #top-menu-bar a:hover {
   color: #334455;
   background-color: #ffffff;
   transition-duration: 300ms;
 }
 
+.current {
+  background-color: #ffffff;
+  color: #334455 !important;
+}
+
 #right-sidebar {
   width: 25%;
   float: right;
 }
-
 
 .page-block {
   display: none;
