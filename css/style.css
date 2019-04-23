@@ -15,7 +15,7 @@
 
 
 body {
-  background: url(/src/img/cream_pixels_@2X.png);
+  background: url(../src/img/cream_pixels_@2X.png);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
     "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
@@ -39,6 +39,7 @@ body, html {
 
 h2 {
   color: #2f373f;
+  margin-top: 0;
 }
 
 #sendMsg {
@@ -90,17 +91,19 @@ button:hover {
 }
 
 #header {
-  height: 145px;
-  margin-bottom: 150px;
+  height: 130px;
+  margin-bottom: 98px;
   padding: 24px;
   border-radius: 5px;
-  background: url(/src/img/header.Backgound.jpg);
+  background: url(../src/img/header.Backgound.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #motto {
-  float: left;
+  position: relative;
+  left: 190px;
+  bottom: 80px;
 }
 
 #header h1 {
@@ -115,18 +118,10 @@ button:hover {
 }
 
 #poza_cv {
-  transition: transform .2s ease-in-out;
-}
-
-#poza_cv:hover { 
-  transform: scale(1.3); 
-}
-
-#poza_cv {
-  width: 160px;
+  width: 175px;
   border-radius: 50%;
   border: 2px solid silver;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 0px;
 }
 
@@ -170,7 +165,7 @@ button:hover {
 .page-block {
   display: none;
   color: white;
-  background: url(/src/img/1280310595990.jpg);
+  background: url(../src/img/1280310595990.jpg);
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover; 
