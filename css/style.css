@@ -15,7 +15,7 @@
 
 
 body {
-  background: url(../src/img/cream_pixels_@2X.png);
+  background: url(../src/img/cream_pixels.png);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
     "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
@@ -24,7 +24,6 @@ body {
 
 body, html {
   margin-top: 0px;
-  /* height: 100%; */
 }
 
 #content-wrap {
@@ -146,7 +145,7 @@ button:hover {
   text-decoration: none;
   margin: 2px 0 2px 0;
   padding: 5px 15px 5px 15px;
-  border-radius: 3px;
+  border-radius: 4px;
   display: inline-block;
   color: #fff;
 }
@@ -170,7 +169,7 @@ button:hover {
 .page-block {
   display: none;
   color: white;
-  background: url(../src/img/1280310595990.jpg);
+  background: url(../src/img/Abstract-Black-7181.jpg);
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover; 
