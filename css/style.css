@@ -4,6 +4,16 @@
     padding-right: 5px;
     padding-top: 0;
   }
+
+  #content {
+    flex-direction: column;
+  }
+
+  #right-sidebar {
+    clear: both;
+    width: 80%;
+  }
+
 }
   @media only screen and (min-width: 1224px) {
     body {
@@ -11,6 +21,8 @@
       padding-right: 100px;
       padding-top: 0;
     }
+
+    
   }
 
 
@@ -26,16 +38,8 @@ body, html {
   margin-top: 0px;
 }
 
-#content-wrap {
-  min-height:100%;
-   position:relative;
-   padding-bottom: 0px;
-}
 
-#content {
-  padding-right: 28%;
-  padding-bottom: 80px;
-}
+
 
 h2 {
   color: #2f373f;
@@ -161,12 +165,26 @@ button:hover {
   color: #334455 !important;
 }
 
+#content {
+
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 #right-sidebar {
   width: 25%;
-  float: right;
+ 
+}
+
+.pages {
+  width: 72%;
 }
 
 .page-block {
+  display: flex;
+  align-items: stretch;
+  margin-left: 0px;
   display: none;
   color: white;
   background: url(../src/img/Abstract-Black-7181.jpg);
