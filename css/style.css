@@ -3,15 +3,44 @@
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 0;
+    flex-direction: column;
+   align-items:stretch;
   }
 
-  #content {
+  #motto {
+    position: relative;
+    top: -50px;
+    left: -2000px;
+  }
+
+  #header h1 {
+    font-size: 18px;
+  }
+
+  #header div p {
+    font-size: 15px;
+  }
+
+
+  #top-menu-bar {
+    display: none;
+  }
+
+  .pages {
+    min-width: 100%;
+  }
+
+  #content  {
+    display: flex;
     flex-direction: column;
   }
 
   #right-sidebar {
-    clear: both;
-    width: 80%;
+    min-width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    
+   
   }
 
 }
@@ -95,7 +124,7 @@ button:hover {
 }
 
 #header {
-  height: 130px;
+  height: 18vh;
   margin-bottom: 98px;
   padding: 24px;
   border-radius: 5px;
@@ -125,10 +154,10 @@ button:hover {
 }
 
 #poza_cv {
-  width: 175px;
+  width:24vh;
   border-radius: 50%;
   border: 2px solid silver;
-  margin-top: 60px;
+  margin-top: 8.5vh;
   margin-bottom: 0px;
 }
 
@@ -182,8 +211,6 @@ button:hover {
 }
 
 .page-block {
-  display: flex;
-  align-items: stretch;
   margin-left: 0px;
   display: none;
   color: white;
@@ -285,13 +312,7 @@ a:hover {
   transition-duration: 80ms;
   }
 
-#footer {
-   
-    position: absolute;
-    left: 125px;
-    bottom: 25px;
-    
-}
+
 
 .picture-zoom-footer {
   transition: transform .1s ease-in-out;
