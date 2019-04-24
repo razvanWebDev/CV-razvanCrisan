@@ -126,6 +126,11 @@ right: 25px;
   color: silver;
 }
 
+.langTitle {
+  width: 100%;
+  text-align: left;
+}
+
 .page-block hr {
   border-color: rgb(63, 37, 11);
 }
@@ -139,11 +144,12 @@ right: 25px;
   transition-duration: 80ms;
 }
 
-table {
-  margin-top: 25px;
+#languages-page table {
+  margin: 20px auto;
   border-collapse: separate;
   border-spacing: 0;
-  min-width: 320px;
+  width: 50%;
+  object-fit: contain;
 }
 
 table tr th, table tr td {
@@ -330,7 +336,7 @@ a:hover {
     padding: 0;
     flex-direction: column;
     align-items: stretch;
-    font-size:xx-small;
+    font-size:x-small;
     overflow-x: hidden;
    
   }
@@ -398,16 +404,16 @@ a:hover {
   }
 
   .page-block {
-    padding: auto;
+    padding-left: 15px;
+
   }
 
   .page-block ul {
     padding-left: 10px;
   }
-
-  table {
-    margin: auto;
-  }
+   #languages-page table {
+     width: 90%;
+   }
 
   #content {
     display: flex;
