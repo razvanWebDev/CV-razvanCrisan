@@ -21,10 +21,11 @@ right: 25px;
 }
 
 .burger div {
-  width: 25px;
-  height: 3px;
+  width: 15px;
+  height: 2px;
   background-color: rgb(255, 255, 255);
-  margin: 5px;
+  margin: 3px;
+  transition: all 0.3s ease;
 }
 
 #header {
@@ -234,22 +235,21 @@ input {
   margin-bottom: 5px;
 }
 
-button {
-  color: #334455;
-  background-color: #fff;
-  border-radius: 3px;
-  border: 1px solid #334455;
-  transition: 0.3s;
-}
 
 #contact button {
   width: 100%;
-}
-
-button:hover {
   color: #fff;
   background-color: #334455;
+  border-radius: 3px;
+  border: 1px solid #334455;
+  transition: 0.3s;
   cursor: pointer;
+}
+
+#contact button:hover {
+  color: #334455;
+  background-color: #fff;
+  
 }
 
 a {
@@ -261,6 +261,10 @@ a {
 a:hover {
   color: black;
   transition-duration: 80ms;
+}
+
+#footer {
+  margin-top: 25px;
 }
 
 .picture-zoom-footer {
@@ -304,6 +308,7 @@ a:hover {
 
 .toggle {
   border: none;
+  background: none;
 }
 
 .toggle .line1 {
@@ -325,15 +330,25 @@ a:hover {
     padding: 0;
     flex-direction: column;
     align-items: stretch;
-    font-size:small;
+    font-size:xx-small;
     overflow-x: hidden;
    
   }
 
-  
+  #header {
+    padding-left: 5px;
+  }
+
   .burger {
     display: block;
     z-index:10; 
+    
+  }
+
+  #motto {
+    
+    position: relative;
+    top: 10px;
   }
 
   #top-menu-bar {
@@ -343,13 +358,13 @@ a:hover {
     right: 0px;
     height: 100vh;
     top: 0vh;
-    background-color: #35424a;
+    background-color: rgba(53, 66, 74, 0.9);
     display: flex;
     z-index:8;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 45%;
    
     transform: translateX(100%);
     animation: navSlideOut 0s forwards;
@@ -360,7 +375,6 @@ a:hover {
 
   .nav-active {
     animation: navSlide 0.5s ease both;
-    /* width: 100%; */
   }
 
   .nav-off {
@@ -368,25 +382,33 @@ a:hover {
   }
 
   #top-menu-bar li:first-of-type {
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
 
   #top-menu-bar li:last-of-type {
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
   }
   
   
-  #motto {
-    
-    position: relative;
-    top: 10px;
-  }
 
 
   /* content */
   .pages {
     min-width: 100%;
   }
+
+  .page-block {
+    padding: auto;
+  }
+
+  .page-block ul {
+    padding-left: 10px;
+  }
+
+  table {
+    margin: auto;
+  }
+
   #content {
     display: flex;
     flex-direction: column;
@@ -398,10 +420,10 @@ a:hover {
   }
 }
 
-/* @media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1224px) {
   body {
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 0;
   }
-} */
+}

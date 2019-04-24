@@ -2,12 +2,13 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('#top-menu-bar');
 const navLinks = document.querySelectorAll('#top-menu-bar li');
 
+
 function initMenu() {
-  
   var links = document.querySelectorAll("#top-menu-bar a");
+
   for (var i = 0; i < links.length; i++) {
     links[i].onclick = function () {
-     navSlide();
+
       $('.page-block').hide();
       $('.menuButtons').removeClass('current');
       var page = this.getAttribute("data-page");
@@ -53,6 +54,19 @@ const navSlide = () => {
     nav.style.animation = `navSlideOut 0.5s`;
   }
 
+  //close navbar on link clik
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].onclick = function () {
+      nav.style.animation = `navSlideOut 0.5s`;
+      nav.classList.remove('nav-active');
+      burger.classList.remove("toggle");
+      navLinks.forEach((link) => {
+        link.style.animation = "";
+      })
+
+    }
+  }
+
   // Amimate links
   navLinks.forEach((link, index) => {
     if (link.style.animation) {
@@ -62,16 +76,14 @@ const navSlide = () => {
     }
   });
 
-
-
   // burger animation
   burger.classList.toggle("toggle");
 
 }
 
+
+
 burger.addEventListener('click', navSlide);
-
-
 
 initMenu();
 $('#skills-page').show();
