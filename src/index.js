@@ -21,18 +21,18 @@ function initMenu() {
 function displaySkills(skills) {
   var resultList = document.querySelector('#skills-page ul');
   var listItems = skills.map(function (skill) {
-    var endorsedBy = " - Endorsed by";
-    if (skill.endorsedBy == "") {
-      endorsedBy = "";
-    }
+    
 
     var name = skill.name;
+    var img = `<img src=${skill.imgPath} alt="pic" class="skillsLogo">`;
+    if ((skill.imgPath == undefined) || (skill.imgPath == null) || (skill.imgPath == '')) {
+      img = "";
+    }
 
-    //   return `<li>${name}<span style="color:gray"> -${skill.endorsments} ${endorsedBy}</span>
-    // ${skill.endorsedBy}
-    // </li>`;
 
-    return `<li>${name}</li>`;
+  
+
+    return `<li>${name} ${img}</li>`;
   })
 
   resultList.innerHTML = listItems.join('');

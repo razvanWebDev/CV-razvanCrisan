@@ -7,6 +7,18 @@ body, html {
   margin-top: 0px;
 }
 
+/* header */
+#header {
+  display: flex;
+  height: 18vh;
+  margin-bottom: 14vh;
+  padding: 24px;
+  border-radius: 5px;
+  background: url(../src/img/header.Backgound.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .burger {
   display: none;
   border: 1px solid white;
@@ -24,17 +36,6 @@ body, html {
   background-color: rgb(255, 255, 255);
   margin: 3px;
   transition: all 0.3s ease;
-}
-
-#header {
-  display: flex;
-  height: 18vh;
-  margin-bottom: 14vh;
-  padding: 24px;
-  border-radius: 5px;
-  background: url(../src/img/header.Backgound.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #poza_cv1 {
@@ -60,6 +61,7 @@ body, html {
   margin-bottom: 0px;
 }
 
+/* Navbar */
 #top-menu-bar {
   text-align: center;
   color: #fff;
@@ -93,6 +95,7 @@ body, html {
   color: #334455 !important;
 }
 
+/* Content */
 #content {
   display: flex;
   justify-content: space-between;
@@ -139,6 +142,16 @@ body, html {
 .page-block a:hover {
   color: #606060;
   transition-duration: 80ms;
+}
+
+#skills-page img {
+  width: 15px;
+  border-radius: 5px;
+}
+
+.skillsLogo {
+  max-width: 10px;
+  border-radius: 5px;
 }
 
 #languages-page table {
