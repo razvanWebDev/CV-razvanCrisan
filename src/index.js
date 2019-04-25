@@ -23,7 +23,7 @@ function initMenu(loadPage) {
 function displaySkills(skills) {
   var resultList = document.querySelector('#skills-page ul');
   var listItems = skills.map(function (skill) {
-    
+
     var name = skill.name;
     // Add icons to skils???
     // var img = `<img src=${skill.imgPath} alt="pic" class="skillsLogo">`;
@@ -46,6 +46,15 @@ function initSkillsPage() {
 
 
 //RESPONSIVE 
+function navClose() {
+  nav.style.animation = `navSlideOut 0.5s`;
+  nav.classList.remove('nav-active');
+  burger.classList.remove("toggle");
+  navLinks.forEach((link) => {
+    link.style.animation = "";
+  })
+}
+
 const navSlide = () => {
 
   //toggle navbar
@@ -59,12 +68,7 @@ const navSlide = () => {
   //close navbar on link click
   for (var i = 0; i < navLinks.length; i++) {
     navLinks[i].onclick = function () {
-      nav.style.animation = `navSlideOut 0.5s`;
-      nav.classList.remove('nav-active');
-      burger.classList.remove("toggle");
-      navLinks.forEach((link) => {
-        link.style.animation = "";
-      })
+      navClose();
 
     }
   }
@@ -83,10 +87,17 @@ const navSlide = () => {
 
 }
 
-
-
 //Events
 burger.addEventListener('click', navSlide);
+
+
+//TODO nav close when click outside
+// window.addEventListener('mouseup', function (event){
+//   if(event.target != nav){
+//     navClose();
+//   }
+// })
+
 
 initMenu("skills");
 $('#skills-page').show();
