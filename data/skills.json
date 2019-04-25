@@ -1,22 +1,22 @@
 [
     {
         "name": "HTML",
-        "imgPath": "../src/img/JS_logo.png"
+        "imgPath": "../src/img/HTML_logo.png"
     },
     {
         "name": "CSS",
-        "imgPath": "../src/img/JS_logo.png"
+        "imgPath": "../src/img/CSS_logo.png"
     },
     {
         "name": "JavaScript",
         "imgPath": "../src/img/JS_logo.png"
     },
     {
-        "name": "Microsoft Office",
-        "imgPath": "../src/img/JS_logo.png"
+        "name": "Microsoft Office"
+      
     },
     {
-        "name": "Saga C",
-        "imgPath": "../src/img/JS_logo.png"
+        "name": "Saga C"
+        
     }
 ]

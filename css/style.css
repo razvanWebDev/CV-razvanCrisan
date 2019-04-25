@@ -144,14 +144,9 @@ body, html {
   transition-duration: 80ms;
 }
 
-#skills-page img {
-  width: 15px;
-  border-radius: 5px;
-}
 
 .skillsLogo {
-  max-width: 10px;
-  border-radius: 5px;
+  max-width: 30px;
 }
 
 #languages-page table {
