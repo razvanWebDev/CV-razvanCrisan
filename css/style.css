@@ -85,13 +85,14 @@ body, html {
 }
 
 #top-menu-bar a:hover {
-  color: #334455;
-  background-color: #ffffff;
-  transition-duration: 300ms;
+  color: #aaaaaa;
+  /* background-color: #bbbbbb; */
+ 
+    transition-duration: 300ms;
 }
 
 .current {
-  background-color: #ffffff;
+  background-color: rgba(230, 234, 240);
   color: #334455 !important;
 }
 

@@ -24,14 +24,14 @@ function displaySkills(skills) {
   var resultList = document.querySelector('#skills-page ul');
   var listItems = skills.map(function (skill) {
     
-
     var name = skill.name;
-    var img = `<img src=${skill.imgPath} alt="pic" class="skillsLogo">`;
-    if ((skill.imgPath == undefined) || (skill.imgPath == null) || (skill.imgPath == '')) {
-      img = "";
-    }
+    // Add icons to skils???
+    // var img = `<img src=${skill.imgPath} alt="pic" class="skillsLogo">`;
+    // if ((skill.imgPath == undefined) || (skill.imgPath == null) || (skill.imgPath == '')) {
+    //   img = "";
+    // }
 
-    return `<li>${img}  ${name} </li>`;
+    return `<li>${name} </li>`;
   })
 
   resultList.innerHTML = listItems.join('');
