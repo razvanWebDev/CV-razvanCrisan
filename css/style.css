@@ -146,7 +146,7 @@ body, html {
 
 
 .skillsLogo {
-  max-width: 30px;
+  height: 30px;
 }
 
 #languages-page table {
@@ -222,6 +222,7 @@ h2 {
   color: #334455;
 }
 
+/* contact form */
 input, textarea {
   margin-bottom: 10px;
   width: 100%;
@@ -262,6 +263,7 @@ input {
   background-color: #fff;
 }
 
+/* footer */
 a {
   text-decoration: none;
   color: rgb(6, 78, 6);
@@ -281,6 +283,8 @@ a:hover {
   transform: scale(1.2);
 }
 
+
+/* RESPONSIVE */
 @keyframes navSlide {
   from {
     transform: translateX(100%);
@@ -326,6 +330,8 @@ a:hover {
 .toggle .line3 {
   transform: rotate(135deg) translate(-5px, -6px);
 }
+
+
 
 @media only screen and (max-width: 768px) {
   body {

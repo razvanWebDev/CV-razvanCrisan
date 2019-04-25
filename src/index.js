@@ -3,7 +3,9 @@ const nav = document.querySelector('#top-menu-bar');
 const navLinks = document.querySelectorAll('#top-menu-bar li');
 
 
-function initMenu() {
+function initMenu(loadPage) {
+  $('#' + loadPage + '-menu').addClass('current');
+
   var links = document.querySelectorAll("#top-menu-bar a");
 
   for (var i = 0; i < links.length; i++) {
@@ -29,14 +31,12 @@ function displaySkills(skills) {
       img = "";
     }
 
-
-  
-
-    return `<li>${name} ${img}</li>`;
+    return `<li>${img}  ${name} </li>`;
   })
 
   resultList.innerHTML = listItems.join('');
 }
+
 
 function initSkillsPage() {
   $.ajax('data/skills.json').done(function (skills) {
@@ -44,6 +44,8 @@ function initSkillsPage() {
   });
 }
 
+
+//RESPONSIVE 
 const navSlide = () => {
 
   //toggle navbar
@@ -54,7 +56,7 @@ const navSlide = () => {
     nav.style.animation = `navSlideOut 0.5s`;
   }
 
-  //close navbar on link clik
+  //close navbar on link click
   for (var i = 0; i < navLinks.length; i++) {
     navLinks[i].onclick = function () {
       nav.style.animation = `navSlideOut 0.5s`;
@@ -83,8 +85,9 @@ const navSlide = () => {
 
 
 
+//Events
 burger.addEventListener('click', navSlide);
 
-initMenu();
+initMenu("skills");
 $('#skills-page').show();
 initSkillsPage();
