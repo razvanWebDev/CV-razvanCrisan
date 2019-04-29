@@ -1,5 +1,6 @@
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('#top-menu-bar');
+const navBar = $('#top-menu-bar');
 const navLinks = document.querySelectorAll('#top-menu-bar li');
 
 
@@ -91,13 +92,12 @@ const navSlide = () => {
 burger.addEventListener('click', navSlide);
 
 
-//TODO nav close when click outside
-// window.addEventListener('mouseup', function (event){
-//   if(event.target != nav){
-//     navClose();
+// TODO nav close when click outside
+// $(document).mouseup(function (e) {
+//   if (!navBar.is(e.target) && navBar.has(e.target).length === 0) {
+//     navSlide();
 //   }
 // })
-
 
 initMenu("skills");
 $('#skills-page').show();

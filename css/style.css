@@ -20,15 +20,26 @@ body, html {
   background-size: cover;
 }
 
-.burger {
+.burgerNav   {
   display: none;
-  border: 1px solid white;
-  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
   background-color: #334455;
   cursor: pointer;
-  position: fixed;
-  right: 25px;
-  top: 25px;
+  position: fixed  ;
+  right: 0px;
+  top: 0px;
+}
+
+#logo {
+  height: 25px;
+}
+
+.burger {
+  float: right;
+  margin-right: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .burger div {
@@ -348,7 +359,7 @@ a:hover {
     padding-left: 5px;
     font-size: xx-small;
   }
-  .burger {
+  .burgerNav {
     display: block;
     z-index: 10;
   }
