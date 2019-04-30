@@ -51,6 +51,7 @@ function navClose() {
   nav.style.animation = `navSlideOut 0.5s`;
   nav.classList.remove('nav-active');
   burger.classList.remove("toggle");
+  $('body').removeClass('navBar-open');
   navLinks.forEach((link) => {
     link.style.animation = "";
   })
@@ -62,8 +63,10 @@ const navSlide = () => {
   nav.classList.toggle('nav-active');
   if (nav.classList.contains("nav-active")) {
     nav.style.animation = `navSlide 0.5s forwards`;
+    $('body').addClass('navBar-open');
   } else {
     nav.style.animation = `navSlideOut 0.5s`;
+    $('body').removeClass('navBar-open');
   }
 
   //close navbar on link click

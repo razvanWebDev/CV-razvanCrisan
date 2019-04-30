@@ -408,6 +408,11 @@ a:hover {
     transform: translateX(100%);
     animation: navSlideOut 0s forwards;
   }
+
+  .navBar-open {
+    overflow: hidden;
+}
+
   #top-menu-bar li {
     opacity: 0;
   }
