@@ -5,6 +5,7 @@ body {
 
 body, html {
   margin-top: 0px;
+  -webkit-tap-highlight-color:transparent;
 }
 
 /* header */
