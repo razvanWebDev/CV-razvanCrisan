@@ -21,23 +21,28 @@ body, html {
 }
 
 .burgerNav   {
-  display: none;
-  width: 100%;
-  padding: 5px;
-  background-color: #334455;
+  display: flex;
+  visibility: hidden;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+   padding-left: 15px;
+  height: 40px;
+  max-width: 100%;
+  background-color: rgba(53, 66, 74, 0.9);
   cursor: pointer;
-  position: fixed  ;
-  right: 0px;
+  position: fixed;
   top: 0px;
+  right: 0px;
+  left: 0px;
 }
 
-#logo {
-  height: 25px;
+.burgerNav h1 {
+  color: white;
 }
+
 
 .burger {
-  float: right;
-  margin-right: 15px;
   border: 1px solid white;
   border-radius: 5px;
 }
@@ -348,6 +353,7 @@ a:hover {
 @media only screen and (max-width: 768px) {
   body {
     padding: 0;
+    margin: 0;
     flex-direction: column;
     align-items: stretch;
     font-size: small;
@@ -355,34 +361,43 @@ a:hover {
   }
   #header {
     height: 75px;
-    margin-bottom: 70px;
+    border-radius: 0;
+    margin-bottom: 35px;
     padding-left: 5px;
     font-size: xx-small;
   }
   .burgerNav {
-    display: block;
-    z-index: 10;
+   visibility: visible;
   }
 
   #poza_cv {
-    width: 140px;
+    width: 115px;
     margin-top: 20px;
   }
 
   #motto {
    margin-top: 110px;
-   
   }
+
+  #motto p{
+    font-size: small;
+    font-weight: 400;
+  }
+
+  #motto h1 {
+    display: none;
+  }
+
   #top-menu-bar {
     margin-top: 0;
     border-radius: 0;
     position: fixed;
     right: 0px;
-    height: 100vh;
-    top: 0vh;
+    height: 90vh;
+    top: 39px;
     background-color: rgba(53, 66, 74, 0.9);
     display: flex;
-    z-index: 8;
+    z-index: 1;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -408,8 +423,10 @@ a:hover {
   /* content */
   .pages {
     min-width: 100%;
+    
   }
   .page-block {
+    margin:8px;
     padding-left: 15px;
   }
   .page-block ul {
