@@ -23,6 +23,9 @@ body, html {
 
 .burgerNav   {
   display: flex;
+  top: 0px;
+  right: 0px;
+  left: 0px;
   visibility: hidden;
   justify-content: space-between;
   align-items: center;
@@ -30,16 +33,23 @@ body, html {
    padding-left: 15px;
   height: 40px;
   max-width: 100%;
+  color: white;
   background-color: rgba(53, 66, 74, 0.9);
   cursor: pointer;
   position: fixed;
-  top: 0px;
-  right: 0px;
-  left: 0px;
+}
+
+#navMotto {
+  text-align: right;
+  line-height:1.1;
 }
 
 .burgerNav h1 {
-  color: white;
+ margin: 0;
+}
+
+.burgerNav p {
+  margin: 0;
 }
 
 
@@ -361,9 +371,9 @@ a:hover {
     overflow-x: hidden;
   }
   #header {
-    height: 75px;
+    height: 110px;
     border-radius: 0;
-    margin-bottom: 35px;
+    margin-bottom: 0;
     padding-left: 5px;
     font-size: xx-small;
   }
@@ -372,22 +382,14 @@ a:hover {
   }
 
   #poza_cv {
-    width: 115px;
-    margin-top: 20px;
+    width: 110px;
+    margin-top: 18px;
   }
 
   #motto {
-   margin-top: 110px;
+   display: none;
   }
 
-  #motto p{
-    font-size: small;
-    font-weight: 400;
-  }
-
-  #motto h1 {
-    display: none;
-  }
 
   #top-menu-bar {
     margin-top: 0;
