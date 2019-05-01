@@ -34,7 +34,9 @@ body, html {
   height: 40px;
   max-width: 100%;
   color: white;
-  background-color: rgba(53, 66, 74, 0.9);
+  /* background-color: rgba(53, 66, 74, 0.9); */
+  background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   cursor: pointer;
   position: fixed;
 }
@@ -94,7 +96,8 @@ body, html {
 #top-menu-bar {
   text-align: center;
   color: #fff;
-  background-color: #334455;
+  background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   border-radius: 5px;
 }
 
@@ -120,7 +123,7 @@ body, html {
 
 .current {
   background-color: rgba(230, 234, 240);
-  color: #334455 !important;
+  color: #434343 !important;
 }
 
 /* Content */
@@ -240,14 +243,14 @@ table tr:last-child td:last-child {
 }
 
 h2 {
-  color: #2f373f;
+  color: #434343;
   margin-top: 0;
 }
 
 #sendMsg {
   margin-bottom: 2px;
   font-weight: bold;
-  color: #334455;
+  color: #434343;
 }
 
 /* contact form */
@@ -260,7 +263,7 @@ input, textarea {
   border-radius: 3px;
   box-sizing: border-box;
   padding-left: 5px;
-  color: #334455;
+  color: #434343;
 }
 
 textarea:focus, input:focus {
@@ -280,32 +283,40 @@ input {
 #contact button {
   width: 100%;
   color: #fff;
-  background-color: #334455;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   border-radius: 3px;
-  border: 1px solid #334455;
+  border: 1px solid #434343;
   transition: 0.3s;
   cursor: pointer;
 }
 
 #contact button:hover {
-  color: #334455;
-  background-color: #fff;
+  color: #434343;
+  background-image: none;
+  background-color: #fff !important;
 }
 
 /* footer */
+#footer {
+  width: 75%;
+  text-align: center;
+}
 
 a {
   text-decoration: none;
-  color: rgb(6, 78, 6);
   cursor: pointer;
 }
 
 a:hover {
-  color: black;
   transition-duration: 80ms;
 }
 
 .picture-zoom-footer {
+  width: 25px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   transition: transform .1s ease-in-out;
 }
 
@@ -351,6 +362,8 @@ a:hover {
 
 .toggle .line1 {
   transform: rotate(-135deg) translate(-5px, 6px);
+  position: relative;
+  top: 1px;
 }
 
 .toggle .line2 {
@@ -359,6 +372,8 @@ a:hover {
 
 .toggle .line3 {
   transform: rotate(135deg) translate(-5px, -6px);
+  position: relative;
+  bottom: 1px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -397,8 +412,10 @@ a:hover {
     position: fixed;
     right: 0px;
     height: 90vh;
-    top: 39px;
-    background-color: rgba(53, 66, 74, 0.9);
+    top: 40px;
+    /* background-color: rgba(53, 66, 74, 0.9); */
+    background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
     display: flex;
     z-index: 1;
     flex-direction: column;
