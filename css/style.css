@@ -53,8 +53,8 @@ body, html {
 }
 
 .burger div {
-  width: 15px;
-  height: 2px;
+  width: 20px;
+  height: 3px;
   background-color: rgb(255, 255, 255);
   margin: 3px;
   transition: all 0.5s ease;
@@ -365,7 +365,6 @@ a:hover {
 .toggle .line3 {
   transform: rotate(135deg) translate(-5px, -6px);
   position: relative;
-  bottom: 1px;
 }
 
 @media only screen and (max-width: 768px) {

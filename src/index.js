@@ -2,9 +2,7 @@ const burger = document.querySelector('.burger');
 const burger1 = document.querySelector('.line1');
 const burger2 = document.querySelector('.line2');
 const burger3 = document.querySelector('.line3');
-
 const nav = document.querySelector('#top-menu-bar');
-const navBar = $('#top-menu-bar');
 const navLinks = document.querySelectorAll('#top-menu-bar li');
 
 
@@ -30,7 +28,7 @@ function displaySkills(skills) {
   var listItems = skills.map(function (skill) {
 
     var name = skill.name;
-    // Add icons to skils???
+    // Add icons to skills???
     // var img = `<img src=${skill.imgPath} alt="pic" class="skillsLogo">`;
     // if ((skill.imgPath == undefined) || (skill.imgPath == null) || (skill.imgPath == '')) {
     //   img = "";
@@ -68,24 +66,6 @@ const navSlide = () => {
 
 
   if (nav.classList.contains("nav-active")) {
-
-    // TODO nav close when click outside
-    // $(document).mouseup(function (e) {
-    //   if (!navBar.is(e.target) && navBar.has(e.target).length === 0) {
-    //     navSlide();
-    //   }
-    // })
-
-
-
-    //close navbar on link click
-    // for (var i = 0; i < navLinks.length; i++) {
-    //   navLinks[i].onclick = function () {
-    //     navClose();
-
-    //   }
-    // }
-
     nav.style.animation = `navSlide 0.5s forwards`;
     $('body').addClass('navBar-open');
   }
@@ -93,7 +73,6 @@ const navSlide = () => {
     nav.style.animation = `navSlideOut 0.5s`;
     $('body').removeClass('navBar-open');
   }
-
 
 
   // Amimate links
@@ -115,7 +94,8 @@ burger.addEventListener('click', navSlide);
 
 
 window.addEventListener('mouseup', function (event) {
-  if ( (event.target != nav) && (event.target != (burger1 && burger2 && burger3))  && (nav.classList.contains('nav-active')) ) {
+  if ((nav.classList.contains('nav-active')) && (event.target != nav) && (event.target != burger1 && event.target != burger2 && event.target != burger3) ) {
+    console.log(event.target);
     navClose();
   }
 })
