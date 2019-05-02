@@ -34,9 +34,7 @@ body, html {
   height: 40px;
   max-width: 100%;
   color: white;
-  /* background-color: rgba(53, 66, 74, 0.9); */
-  background-color: #000000;
-background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+  background-color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
   position: fixed;
 }
@@ -54,18 +52,12 @@ background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   margin: 0;
 }
 
-
-.burger {
-  border: 1px solid white;
-  border-radius: 5px;
-}
-
 .burger div {
   width: 15px;
   height: 2px;
   background-color: rgb(255, 255, 255);
   margin: 3px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 #poza_cv {
@@ -122,7 +114,7 @@ background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
 
 .current {
-  background-color: rgba(230, 234, 240);
+  background-color: #eeeeee;
   color: #434343 !important;
 }
 
@@ -294,7 +286,7 @@ input {
 #contact button:hover {
   color: #434343;
   background-image: none;
-  background-color: #fff !important;
+  background-color: #eeeeee !important;
 }
 
 /* footer */
@@ -411,13 +403,11 @@ a:hover {
     border-radius: 0;
     position: fixed;
     right: 0px;
-    height: 90vh;
+    height: 100vh;
     top: 40px;
-    /* background-color: rgba(53, 66, 74, 0.9); */
-    background-color: #000000;
-background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: none;
     display: flex;
-    z-index: 1;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
