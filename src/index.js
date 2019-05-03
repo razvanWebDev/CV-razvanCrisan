@@ -34,7 +34,7 @@ function displayProjects(projects) {
     
 
     return `<div class="project-div"><h3>${name} </h3>
-            <img src = ${image} alt="pic" class="project-pic" width="60%" border-radius="10px"><hr></div>`;
+            <img src = ${image} alt="pic" class="project-pic" width="50%"><hr></div>`;
   })
 
   resultList.innerHTML = listItems.join('');
