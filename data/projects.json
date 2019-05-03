@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Node Fitness Member App",
+        "imgPath": "../src/img/fitness-app.png",
+        "codeLink": "https://github.com/Crsnrazvan84/node-fitness-members-app",
+        "demoLink": "https://crsnrazvan84.github.io/node-fitness-members-app/public/index.html"
+    },
+    {
+        "name": "Beauty Studio Barnsley",
+        "imgPath": "../src/img/beauty-studio.png",
+        "codeLink": "https://github.com/Crsnrazvan84/beauty-studio-barnsley",
+        "demoLink": "https://crsnrazvan84.github.io/beauty-studio-barnsley/"
+    },
+    {
+        "name": "Rock Paper Scissors Lizzard Spock",
+        "imgPath": "../src/img/rock-paper-scissors-lizzard-spock.png",
+        "codeLink": "https://github.com/Crsnrazvan84/rock-paper-scissors-lizard-spock",
+        "demoLink": "https://crsnrazvan84.github.io/rock-paper-scissors-lizard-spock/index.html"
+    },
+    {
+        "name": "Rock Paper Scissors",
+        "imgPath": "../src/img/rock-paper-scissors.png",
+        "codeLink": "https://github.com/Crsnrazvan84/rock-paper-scissors",
+        "demoLink": "https://crsnrazvan84.github.io/rock-paper-scissors/"
+    }
+]

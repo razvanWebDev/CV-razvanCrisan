@@ -23,27 +23,27 @@ function initMenu(loadPage) {
   }
 }
 
-function displaySkills(skills) {
-  var resultList = document.querySelector('#portfolio-page');
-  var listItems = skills.map(function (skill) {
+function displayProjects(projects) {
+  var resultList = document.querySelector('.projects');
+  var listItems = projects.map(function (project) {
 
-    var name = skill.name;
-    // Add icons to skills???
-    // var img = `<img src=${skill.imgPath} alt="pic" class="skillsLogo">`;
-    // if ((skill.imgPath == undefined) || (skill.imgPath == null) || (skill.imgPath == '')) {
-    //   img = "";
-    // }
+    const name = project.name;
+    const image = project.imgPath;
+    const codeLink = project.codeLink;
+    const demoLink = project.demoLink;
+    
 
-    return `<li>${name} </li>`;
+    return `<div class="project-div"><h3>${name} </h3>
+            <img src = ${image} alt="pic" class="project-pic" width="60%" border-radius="10px"><hr></div>`;
   })
 
   resultList.innerHTML = listItems.join('');
 }
 
 
-function initSkillsPage() {
-  $.ajax('data/skills.json').done(function (skills) {
-    displaySkills(skills);
+function initProjectsPage() {
+  $.ajax('data/projects.json').done(function (projects) {
+    displayProjects(projects);
   });
 }
 
@@ -104,4 +104,4 @@ window.addEventListener('mouseup', function (event) {
 
 initMenu("skills");
 $('#skills-page').show();
-initSkillsPage();
+initProjectsPage();

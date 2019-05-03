@@ -168,8 +168,13 @@ background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   transition-duration: 80ms;
 }
 
-.skillsLogo {
-  height: 30px;
+
+#portfolio-page {
+  text-align:  center;
+}
+
+h3 {
+  color: silver;
 }
 
 #languages-page table {
