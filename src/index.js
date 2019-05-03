@@ -24,7 +24,7 @@ function initMenu(loadPage) {
 }
 
 function displaySkills(skills) {
-  var resultList = document.querySelector('#skills-page ul');
+  var resultList = document.querySelector('#portfolio-page');
   var listItems = skills.map(function (skill) {
 
     var name = skill.name;
@@ -95,7 +95,6 @@ burger.addEventListener('click', navSlide);
 
 window.addEventListener('mouseup', function (event) {
   if ((nav.classList.contains('nav-active')) && (event.target != nav) && (event.target != burger1 && event.target != burger2 && event.target != burger3) ) {
-    console.log(event.target);
     navClose();
   }
 })
