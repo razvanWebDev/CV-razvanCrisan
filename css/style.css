@@ -1,6 +1,7 @@
 body {
   background: url(../src/img/cream_pixels.png);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  z-index: 1;
 }
 
 body, html {
@@ -30,7 +31,7 @@ body, html {
   justify-content: space-between;
   align-items: center;
   padding-right: 15px;
-   padding-left: 15px;
+  padding-left: 15px;
   height: 40px;
   max-width: 100%;
   color: white;
@@ -91,6 +92,7 @@ body, html {
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   border-radius: 5px;
+  z-index: 2;
 }
 
 #top-menu-bar li {
@@ -219,11 +221,10 @@ visibility: visible;
 
 .btn{
  background-color: #3D9970;
-  width: 100px;
   border-radius: 15px;
   border: none;
   outline: none;
-  padding: 5px;
+  padding: 5px 20px;
   font-weight: bold;
   cursor: pointer;
   transition-duration: .3s;
@@ -519,8 +520,12 @@ a:hover {
   }
 
   .project-links {
+    width: 70%;
     visibility: visible;
     background-color: rgba(256, 256, 256, 0.1)
+  }
+  .btn{
+    font-size: x-small;
   }
 
   #languages-page table {
