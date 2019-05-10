@@ -23,6 +23,7 @@ body, html {
 }
 
 .burgerNav   {
+  z-index: 2;
   display: flex;
   top: 0px;
   right: 0px;
