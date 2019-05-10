@@ -173,6 +173,11 @@ background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   text-align:  center;
 }
 
+.project-pic {
+  border-radius: 8px;
+  width: 60%;
+  margin: 20px auto}
+
 h3 {
   color: silver;
 }
