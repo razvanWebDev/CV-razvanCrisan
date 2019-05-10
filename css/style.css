@@ -191,7 +191,7 @@ body, html {
 
 .project-pic { 
   width: 100%;
-  border-radius: 8px;
+  border-radius: 5px;
   transition-duration: .3s;
  
 
@@ -211,8 +211,10 @@ visibility: visible;
  bottom: 20px;
  display: flex;
  visibility: hidden;
- width: 70%;
- justify-content: space-around;
+ width: 50%;
+ justify-content: space-between;
+ padding: 8px;
+ border-radius: 30px;
 }
 
 .btn{
@@ -510,6 +512,15 @@ a:hover {
 
   .img-container {
     width: 90%;
+  }
+
+  .img-container:hover .project-pic {
+    opacity: 1;
+  }
+
+  .project-links {
+    visibility: visible;
+    background-color: rgba(256, 256, 256, 0.1)
   }
 
   #languages-page table {
