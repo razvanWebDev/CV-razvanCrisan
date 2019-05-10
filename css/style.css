@@ -202,11 +202,11 @@ body, html {
 
 .project-pic:hover + .project-links, .project-links:hover {
 visibility: visible;
+
 }
 
 .img-container:hover .project-pic {
   opacity: 0.3;
- 
 }
 
 .project-links {
@@ -216,7 +216,7 @@ visibility: visible;
  visibility: hidden;
  width: 50%;
  justify-content: space-between;
- padding: 8px;
+ padding: 5px;
  border-radius: 30px;
 }
 
@@ -228,7 +228,6 @@ visibility: visible;
   padding: 5px 20px;
   font-weight: bold;
   cursor: pointer;
-  transition-duration: .3s;
 }
 
 .btn:hover {
