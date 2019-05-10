@@ -116,5 +116,5 @@ window.addEventListener('mouseup', function (event) {
 
 
 initMenu("skills");
-$('#home-page').show();
+$('#skills-page').show();
 initProjectsPage();

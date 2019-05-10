@@ -137,10 +137,12 @@ body, html {
   margin-left: 0px;
   display: none;
   color: white;
-  background: url(../src/img/Abstract-Black-7181.jpg);
+  /* background: url(../src/img/Abstract-Black-7181.jpg);
   background-position: center;
   background-repeat: repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   padding: 24px;
   border-radius: 5px;
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.7);
@@ -170,23 +172,21 @@ body, html {
 
 
 #portfolio-page {
-  text-align:  center;
-  /* background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #434343 74%); */
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
 
 .img-container {
 
   display: flex;
   position: relative;
-  flex: 1;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
   border-radius: 8px;
   width: 60%;
   margin: 20px auto;
-  background-color: rgb(0, 0, 0);
+  background-color:#000000;
 }
 
 .project-pic { 
@@ -202,12 +202,9 @@ visibility: visible;
 }
 
 .img-container:hover .project-pic {
-  opacity: 0.5;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  opacity: 0.3;
+ 
 }
-
-
 
 .project-links {
  position: absolute;
@@ -227,7 +224,7 @@ visibility: visible;
   padding: 5px;
   font-weight: bold;
   cursor: pointer;
-  
+  transition-duration: .3s;
 }
 
 .btn:hover {
@@ -510,6 +507,11 @@ a:hover {
   .page-block ul {
     padding-left: 10px;
   }
+
+  .img-container {
+    width: 90%;
+  }
+
   #languages-page table {
     width: 90%;
     margin: 20px auto;
