@@ -6,6 +6,7 @@ const nav = document.querySelector('#top-menu-bar');
 const navLinks = document.querySelectorAll('#top-menu-bar li');
 
 
+
 function initMenu(loadPage) {
   $('#' + loadPage + '-menu').addClass('current');
 
@@ -31,10 +32,22 @@ function displayProjects(projects) {
     const image = project.imgPath;
     const codeLink = project.codeLink;
     const demoLink = project.demoLink;
-    
 
-    return `<div class="project-div"><h3>${name} </h3>
-            <img src = ${image} alt="pic" class="project-pic" width="50%"><hr></div>`;
+
+    return `<div class="project-div">
+              <h3>${name} </h3>
+              <div class="img-container">
+                <img src = ${image} alt="pic" class="project-pic">
+                <div class="project-links">
+						      <a href="${codeLink}" target="_blank">
+							    <button class="btn">Code</button>
+						       </a>
+						      <a href="${demoLink}" target="_blank">
+							    <button class="btn">Demo</button>
+						       </a>
+					      </div>
+              </div>
+            </div><hr>`;
   })
 
   resultList.innerHTML = listItems.join('');
@@ -86,7 +99,7 @@ const navSlide = () => {
 
   // burger animation
   burger.classList.toggle("toggle");
-  
+
 }
 
 //Events
@@ -94,7 +107,7 @@ burger.addEventListener('click', navSlide);
 
 
 window.addEventListener('mouseup', function (event) {
-  if ((nav.classList.contains('nav-active')) && (event.target != nav) && (event.target != burger1 && event.target != burger2 && event.target != burger3) ) {
+  if ((nav.classList.contains('nav-active')) && (event.target != nav) && (event.target != burger1 && event.target != burger2 && event.target != burger3)) {
     navClose();
   }
 })
@@ -103,5 +116,5 @@ window.addEventListener('mouseup', function (event) {
 
 
 initMenu("skills");
-$('#skills-page').show();
+$('#home-page').show();
 initProjectsPage();
