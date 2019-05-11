@@ -179,14 +179,17 @@ body, html {
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
 
-.img-container {
+.project-div h3 {
+  text-align: center;
+}
 
+.img-container {
   display: flex;
   position: relative;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
-  border-radius: 8px;
+  border-radius: 7px;
   width: 60%;
   margin: 20px auto;
   background-color:#000000;
@@ -196,8 +199,6 @@ body, html {
   width: 100%;
   border-radius: 5px;
   transition-duration: .3s;
- 
-
 }
 
 .project-pic:hover + .project-links, .project-links:hover {
@@ -236,6 +237,10 @@ visibility: visible;
 
 h3 {
   color: silver;
+}
+
+#portfolio-page hr:last-of-type {
+  display: none;
 }
 
 #languages-page table {
@@ -340,6 +345,7 @@ input {
 
 #contact button {
   width: 100%;
+  height: 25px;
   color: #fff;
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
@@ -520,9 +526,9 @@ a:hover {
   }
 
   .project-links {
-    width: 70%;
+    width: 60%;
     visibility: visible;
-    background-color: rgba(256, 256, 256, 0.1)
+    background-color: rgba(256, 256, 256, 0.3)
   }
   .btn{
     font-size: x-small;
