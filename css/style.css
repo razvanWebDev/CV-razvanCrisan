@@ -239,7 +239,7 @@ h3 {
   color: silver;
 }
 
-#portfolio-page hr:last-of-type {
+.projects:last-of-type hr {
   display: none;
 }
 
