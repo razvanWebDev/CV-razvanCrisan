@@ -22,5 +22,11 @@
         "imgPath": "../src/img/rock-paper-scissors.png",
         "codeLink": "https://github.com/Crsnrazvan84/rock-paper-scissors",
         "demoLink": "https://crsnrazvan84.github.io/rock-paper-scissors/"
+    },
+    {
+        "name": "Phone Book",
+        "imgPath": "../src/img/PhoneBook.png",
+        "codeLink": "https://github.com/Crsnrazvan84/node-agenda-app",
+        "demoLink": "https://crsnrazvan84.github.io/node-agenda-app/public/agenda.html"
     }
 ]

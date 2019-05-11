@@ -239,7 +239,7 @@ h3 {
   color: silver;
 }
 
-.projects:last-of-type hr {
+.projects hr:last-of-type {
   display: none;
 }
 
