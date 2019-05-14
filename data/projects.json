@@ -1,12 +1,14 @@
 [
     {
-        "name": "Node Fitness Member App",
+        "name": "Gym Member App",
         "imgPath": "../src/img/fitness-app.png",
         "codeLink": "https://github.com/Crsnrazvan84/node-fitness-members-app",
-        "demoLink": "https://crsnrazvan84.github.io/node-fitness-members-app/public/index.html"
+        "demoLink": "https://crsnrazvan84.github.io/node-fitness-members-app/public/index.html",
+        "description": "An app  designed to manage Gym Member subscriptions. Allows CRUD operationd and contains multiple member editable features like contract extension, adding or deleting gym sessions and member info.",
+        "skillsUsed": "Skills used: HTML, CSS, JavaScript, JQuery, MySQL, Node.JS, Gravatar"
     },
     {
-        "name": "Beauty Studio Barnsley",
+        "name": "Beauty Studio Website",
         "imgPath": "../src/img/beauty-studio.png",
         "codeLink": "https://github.com/Crsnrazvan84/beauty-studio-barnsley",
         "demoLink": "https://crsnrazvan84.github.io/beauty-studio-barnsley/"
@@ -24,7 +26,7 @@
         "demoLink": "https://crsnrazvan84.github.io/rock-paper-scissors/"
     },
     {
-        "name": "Phone Book",
+        "name": "Phone Book App",
         "imgPath": "../src/img/PhoneBook.png",
         "codeLink": "https://github.com/Crsnrazvan84/node-agenda-app",
         "demoLink": "https://crsnrazvan84.github.io/node-agenda-app/public/agenda.html"

@@ -32,6 +32,8 @@ function displayProjects(projects) {
     const image = project.imgPath;
     const codeLink = project.codeLink;
     const demoLink = project.demoLink;
+    const description = project.description;
+    const skillsUsed = project.skillsUsed;
 
 
     return `<div class="project-div">
@@ -40,13 +42,15 @@ function displayProjects(projects) {
                 <img src = ${image} alt="pic" class="project-pic">
                 <div class="project-links">
 						      <a href="${codeLink}" target="_blank">
-							    <button class="btn">Code</button>
+							    <button class="btn"> View Code</button>
 						       </a>
 						      <a href="${demoLink}" target="_blank">
-							    <button class="btn">Demo</button>
+							    <button class="btn">Demo version</button>
 						       </a>
 					      </div>
               </div>
+              <p>${description}</p>
+              <p>${skillsUsed}</p>
             </div><hr>`;
   })
 
