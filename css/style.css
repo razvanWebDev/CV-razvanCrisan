@@ -9,6 +9,11 @@ body, html {
   -webkit-tap-highlight-color:transparent;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* header */
 
 #header {
@@ -140,15 +145,15 @@ body, html {
   margin-left: 0px;
   display: none;
   color: white;
-  /* background: url(../src/img/Abstract-Black-7181.jpg);
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover; */
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   padding: 24px;
   border-radius: 5px;
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+.page-block a {
+  color: rgb(170, 123, 75);
 }
 
 .page-block h2 {
@@ -162,10 +167,6 @@ body, html {
 
 .page-block hr {
   border-color: rgb(63, 37, 11);
-}
-
-.page-block a {
-  color: darkgray;
 }
 
 .page-block a:hover {
@@ -282,25 +283,21 @@ table.Info tr th, table.Info tr:first-child td {
 }
 
 /* top-left border-radius */
-
 table tr:first-child th:first-child, table.Info tr:first-child td:first-child {
   border-top-left-radius: 6px;
 }
 
 /* top-right border-radius */
-
 table tr:first-child th:last-child, table.Info tr:first-child td:last-child {
   border-top-right-radius: 6px;
 }
 
 /* bottom-left border-radius */
-
 table tr:last-child td:first-child {
   border-bottom-left-radius: 6px;
 }
 
 /* bottom-right border-radius */
-
 table tr:last-child td:last-child {
   border-bottom-right-radius: 6px;
 }
@@ -317,7 +314,6 @@ h2 {
 }
 
 /* contact form */
-
 input, textarea {
   margin-bottom: 10px;
   width: 100%;
@@ -364,15 +360,6 @@ input {
 /* footer */
 #footer {
   text-align: center;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-a:hover {
-  transition-duration: 80ms;
 }
 
 .picture-zoom-footer {
