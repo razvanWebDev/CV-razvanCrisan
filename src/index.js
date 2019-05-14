@@ -45,7 +45,7 @@ function displayProjects(projects) {
 							    <button class="btn"> View Code</button>
 						       </a>
 						      <a href="${demoLink}" target="_blank">
-							    <button class="btn">Demo version</button>
+							    <button class="btn">View Demo</button>
 						       </a>
 					      </div>
               </div>

@@ -178,6 +178,14 @@ a {
   display: flex;
   flex: 1;
   justify-content: space-around;
+
+}
+
+
+.skills-container h4 {
+  color: silver;
+  width: 100%;
+  text-align: center;
 }
 
 #portfolio-page {
@@ -185,10 +193,6 @@ a {
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
 
-.project-div{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
 .project-div h3 {
   text-align: center;
@@ -524,7 +528,7 @@ input {
   }
 
   .project-links {
-    width: 60%;
+    width: 80%;
     visibility: visible;
     background-color: rgba(256, 256, 256, 0.3)
   }
