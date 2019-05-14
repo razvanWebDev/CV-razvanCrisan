@@ -4,31 +4,39 @@
         "imgPath": "../src/img/fitness-app.png",
         "codeLink": "https://github.com/Crsnrazvan84/node-fitness-members-app",
         "demoLink": "https://crsnrazvan84.github.io/node-fitness-members-app/public/index.html",
-        "description": "An app  designed to manage Gym Member subscriptions. Allows CRUD operationd and contains multiple member editable features like contract extension, adding or deleting gym sessions and member info.",
-        "skillsUsed": "Skills used: HTML, CSS, JavaScript, JQuery, MySQL, Node.JS, Gravatar"
+        "description": "An app  designed to manage Gym Member subscriptions. Allows CRUD operationd and contains multiple member editable features like contract extension, adding or deleting gym sessions and member info. On demo version, the members are loaded from a JSON file, so not all CRUD are available in this case.",
+        "skillsUsed": "Skills used: HTML, CSS, JavaScript, Express NodeJS, JQuery, MySQL, JSON, Gravatar."
     },
     {
         "name": "Beauty Studio Website",
         "imgPath": "../src/img/beauty-studio.png",
         "codeLink": "https://github.com/Crsnrazvan84/beauty-studio-barnsley",
-        "demoLink": "https://crsnrazvan84.github.io/beauty-studio-barnsley/"
+        "demoLink": "https://crsnrazvan84.github.io/beauty-studio-barnsley/", 
+        "description": "Beauty studio website wich contains a welcome page, price listings, an offers page and contact.", 
+        "skillsUsed": "Skills used: HTML, CSS, JavaScript, JQuery, PHP, embeded Google Maps."
     },
     {
         "name": "Rock Paper Scissors Lizzard Spock",
         "imgPath": "../src/img/rock-paper-scissors-lizzard-spock.png",
         "codeLink": "https://github.com/Crsnrazvan84/rock-paper-scissors-lizard-spock",
-        "demoLink": "https://crsnrazvan84.github.io/rock-paper-scissors-lizard-spock/index.html"
+        "demoLink": "https://crsnrazvan84.github.io/rock-paper-scissors-lizard-spock/index.html", 
+        "description": "Classic Rock Paper Scissors game updated by Sheldon Cooper from tv series 'The Big Bang Theory', has a main page to play the game and rules page with the rules displayed and explained by Sheldon himself.", 
+        "skillsUsed": "Skills used: HTML, CSS, JavaScript, JQuery, embeded Youtube video."
     },
     {
         "name": "Rock Paper Scissors",
         "imgPath": "../src/img/rock-paper-scissors.png",
         "codeLink": "https://github.com/Crsnrazvan84/rock-paper-scissors",
-        "demoLink": "https://crsnrazvan84.github.io/rock-paper-scissors/"
+        "demoLink": "https://crsnrazvan84.github.io/rock-paper-scissors/", 
+        "description": "Classic Rock Paper Scissors game against the computer.", 
+        "skillsUsed": "Skills used: HTML, CSS, JavaScript, JQuery"
     },
     {
         "name": "Phone Book App",
         "imgPath": "../src/img/PhoneBook.png",
         "codeLink": "https://github.com/Crsnrazvan84/node-agenda-app",
-        "demoLink": "https://crsnrazvan84.github.io/node-agenda-app/public/agenda.html"
+        "demoLink": "https://crsnrazvan84.github.io/node-agenda-app/public/agenda.html", 
+        "description": "My first nodeJS app containig CRUD oparations.", 
+        "skillsUsed": "Skills used: HTML, CSS, JavaScript, Express NodeJS, JQuery, JSON."
     }
 ]
