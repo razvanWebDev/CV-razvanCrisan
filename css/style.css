@@ -153,7 +153,11 @@ a {
 }
 
 .page-block a {
-  color: rgb(170, 123, 75);
+  color: rgb(228, 171, 115);
+}
+
+.page-block a:hover {
+  color: rgb(185, 96, 8) !important;
 }
 
 .page-block h2 {
@@ -176,16 +180,21 @@ a {
 
 .skills-container {
   display: flex;
-  flex: 1;
   justify-content: space-around;
-
 }
 
+.skills-container div {
+  text-align: center;
+}
 
 .skills-container h4 {
   color: silver;
-  width: 100%;
+}
+
+.skills-container ul {
+  list-style-type: none;
   text-align: center;
+  padding: 0;
 }
 
 #portfolio-page {
