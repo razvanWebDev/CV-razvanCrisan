@@ -40,7 +40,7 @@ a {
   padding-left: 15px;
   height: 40px;
   max-width: 100%;
-  color: white;
+  color: whitesmoke;
   background-color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
   position: fixed;
@@ -137,6 +137,7 @@ a {
   width: 25%;
 }
 
+/* page block */
 .pages {
   width: 72%;
 }
@@ -144,7 +145,7 @@ a {
 .page-block {
   margin-left: 0px;
   display: none;
-  color: white;
+  color: whitesmoke;
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   padding: 24px;
@@ -178,6 +179,7 @@ a {
   transition-duration: 80ms;
 }
 
+/* skills-page */
 .skills-container {
   display: flex;
   justify-content: space-around;
@@ -197,6 +199,7 @@ a {
   padding: 0;
 }
 
+/* portfolio-page */
 #portfolio-page {
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
@@ -268,6 +271,18 @@ h3 {
   display: none;
 }
 
+/* experience-page */
+#experience-page {
+  color: silver;
+}
+
+#experience-page p {
+  color: whitesmoke;
+  text-align: justify;
+  padding-right: 40px;
+}
+
+/* languages-page */
 #languages-page table {
   margin: 20px;
   margin-bottom: 0;
@@ -282,7 +297,7 @@ table tr th, table tr td {
   border-right: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
   padding: 5px;
-  color: white;
+  color: whitesmoke;
 }
 
 table tr th:first-child, table tr th:last-child {
@@ -541,8 +556,13 @@ input {
     visibility: visible;
     background-color: rgba(256, 256, 256, 0.3)
   }
+
   .btn{
     font-size: x-small;
+  }
+
+  #experience-page p {
+    padding-right: 10px;
   }
 
   #languages-page table {
