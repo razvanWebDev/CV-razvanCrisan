@@ -4,6 +4,8 @@ const burger2 = document.querySelector('.line2');
 const burger3 = document.querySelector('.line3');
 const nav = document.querySelector('#top-menu-bar');
 const navLinks = document.querySelectorAll('#top-menu-bar li');
+const toTop = document.querySelector('#toTop');
+
 
 
 
@@ -12,12 +14,12 @@ function initMenu(loadPage) {
 
   var links = document.querySelectorAll("#top-menu-bar a");
 
-  for (var i = 0; i < links.length; i++) {
+  for (let i = 0; i < links.length; i++) {
     links[i].onclick = function () {
 
       $('.page-block').hide();
       $('.menuButtons').removeClass('current');
-      var page = this.getAttribute("data-page");
+      const page = this.getAttribute("data-page");
       $('#' + page + '-page').fadeIn();
       $('#' + page + '-menu').addClass('current');
     };
@@ -25,8 +27,8 @@ function initMenu(loadPage) {
 }
 
 function displayProjects(projects) {
-  var resultList = document.querySelector('.projects');
-  var listItems = projects.map(function (project) {
+  const resultList = document.querySelector('.projects');
+  const listItems = projects.map(function (project) {
 
     const name = project.name;
     const image = project.imgPath;
@@ -64,6 +66,20 @@ function initProjectsPage() {
   });
 }
 
+// Window scroll up
+function scrollUp() {
+  const y = window.scrollY;
+
+  if (y >= 300) {
+    toTop.style.display = 'block';
+    toTop.addEventListener('click', () => window.scroll({ top: 0, behavior: "smooth" }));
+
+  } else {
+    toTop.style.display = 'none';
+  }
+}
+
+// window.addEventListener('scroll', scrollUp);
 
 //RESPONSIVE 
 function navClose() {
@@ -108,7 +124,6 @@ const navSlide = () => {
 
 //Events
 burger.addEventListener('click', navSlide);
-
 
 window.addEventListener('mouseup', function (event) {
   if ((nav.classList.contains('nav-active')) && (event.target != nav) && (event.target != burger1 && event.target != burger2 && event.target != burger3)) {

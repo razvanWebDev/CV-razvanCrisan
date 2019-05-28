@@ -445,6 +445,13 @@ input {
   font-weight: 800;
   position: relative;
   bottom: 10px;
+  animation-name: sohwtop;
+  animation-duration: 0.4s;
+}
+
+@keyframes sohwtop {
+  0% {display: none;}
+  100% {display: block;}
 }
 
 
