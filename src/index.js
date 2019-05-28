@@ -7,12 +7,10 @@ const navLinks = document.querySelectorAll('#top-menu-bar li');
 const toTop = document.querySelector('#toTop');
 
 
-
-
 function initMenu(loadPage) {
   $('#' + loadPage + '-menu').addClass('current');
 
-  var links = document.querySelectorAll("#top-menu-bar a");
+  const links = document.querySelectorAll("#top-menu-bar a");
 
   for (let i = 0; i < links.length; i++) {
     links[i].onclick = function () {
@@ -70,16 +68,15 @@ function initProjectsPage() {
 function scrollUp() {
   const y = window.scrollY;
 
-  if (y >= 300) {
+  if (y <= 300) {
+    toTop.style.display = 'none';
+  } else {
     toTop.style.display = 'block';
     toTop.addEventListener('click', () => window.scroll({ top: 0, behavior: "smooth" }));
-
-  } else {
-    toTop.style.display = 'none';
   }
 }
 
-// window.addEventListener('scroll', scrollUp);
+window.addEventListener('scroll', scrollUp);
 
 //RESPONSIVE 
 function navClose() {

@@ -418,13 +418,13 @@ input {
 
 /* Scroll up arrow */
 #toTop {
+  display: none;
   position: fixed;
   bottom: 30px;
   right: 30px;
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.7;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
 }
 
 #toTop:hover {
@@ -436,28 +436,23 @@ input {
   margin: 0;
 }
 
-
 #top_p {
-  display: none;
+  opacity: 0;
   margin:  0;
   line-height: 1;
+  font-size: 0;
   color: #434343;
   font-weight: 800;
   position: relative;
-  bottom: 10px;
-  animation-name: sohwtop;
-  animation-duration: 0.4s;
+  bottom: 12px;
+  transition-duration: 0.4s;
 }
 
-@keyframes sohwtop {
-  0% {display: none;}
-  100% {display: block;}
-}
 
 
 #toTop:hover #top_p {
-  display: block;
-  transition-duration: 0.5s;
+  opacity: 1;
+  font-size: 19px;
 }
 
 /* RESPONSIVE */
