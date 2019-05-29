@@ -68,7 +68,7 @@ function initProjectsPage() {
 function scrollUp() {
   const y = window.scrollY;
 
-  if (y <= 300) {
+  if (y <= 1) {
     toTop.style.display = 'none';
   } else {
     toTop.style.display = 'block';
@@ -123,7 +123,8 @@ const navSlide = () => {
 burger.addEventListener('click', navSlide);
 
 window.addEventListener('mouseup', function (event) {
-  if ((nav.classList.contains('nav-active')) && (event.target != nav) && (event.target != burger1 && event.target != burger2 && event.target != burger3)) {
+  if ((nav.classList.contains('nav-active')) && (event.target != nav) && (event.target != burger1 && event.target != burger2 && event.target != burger3)) 
+  {
     navClose();
   }
 })
