@@ -186,11 +186,11 @@ a {
 /* skills-page */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
   justify-items: center;
   align-items: center;
   grid-gap: 40px;
-  padding: 30px;
+  padding: 40px;
 }
 
 .skill-logo {
