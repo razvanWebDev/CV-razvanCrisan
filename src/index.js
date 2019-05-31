@@ -68,7 +68,7 @@ function initProjectsPage() {
 function scrollUp() {
   const y = window.scrollY;
 
-  if (y <= 1) {
+  if (y <= 150) {
     toTop.style.display = 'none';
   } else {
     toTop.style.display = 'block';
