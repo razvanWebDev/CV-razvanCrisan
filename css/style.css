@@ -185,12 +185,12 @@ a {
 
 /* skills-page */
 .skills-container {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+ 
 }
 
-.skills-container div {
-  text-align: center;
+.skill-logo {
+  width: 75px;
 }
 
 .skills-container h4 {
