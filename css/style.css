@@ -564,6 +564,7 @@ input {
     width: 45%;
     transform: translateX(100%);
     animation: navSlideOut 0s forwards;
+    box-shadow: none;
   }
 
   .navBar-open {
@@ -598,9 +599,7 @@ input {
   }
 
   .skills-container {
-
     grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
-   
   }
 
   .img-container {
