@@ -597,6 +597,12 @@ input {
     padding-left: 10px;
   }
 
+  .skills-container {
+
+    grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+   
+  }
+
   .img-container {
     width: 90%;
   }
