@@ -6,7 +6,7 @@ body {
 
 body, html {
   margin-top: 0px;
-  -webkit-tap-highlight-color:transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -27,7 +27,7 @@ a {
   background-size: cover;
 }
 
-.burgerNav   {
+.burgerNav {
   z-index: 2;
   display: flex;
   top: 0px;
@@ -48,11 +48,11 @@ a {
 
 #navMotto {
   text-align: right;
-  line-height:1.1;
+  line-height: 1.1;
 }
 
 .burgerNav h1 {
- margin: 0;
+  margin: 0;
 }
 
 .burgerNav p {
@@ -101,7 +101,7 @@ a {
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   border-radius: 5px;
-  box-shadow: 0px 2px 3px 0px rgba(220,220,220,0.75);
+  box-shadow: 0px 2px 3px 0px rgba(220, 220, 220, 0.75);
   z-index: 2;
 }
 
@@ -142,6 +142,7 @@ a {
 }
 
 /* page block */
+
 .pages {
   width: 72%;
 }
@@ -184,6 +185,7 @@ a {
 }
 
 /* skills-page */
+
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
@@ -212,6 +214,7 @@ a {
 }
 
 /* portfolio-page */
+
 #portfolio-page {
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
@@ -235,18 +238,17 @@ a {
   border-radius: 7px;
   width: 60%;
   margin: 20px auto;
-  background-color:#000000;
+  background-color: #000000;
 }
 
-.project-pic { 
+.project-pic {
   width: 100%;
   border-radius: 5px;
   transition-duration: .3s;
 }
 
-.project-pic:hover + .project-links, .project-links:hover {
-visibility: visible;
-
+.project-pic:hover+.project-links, .project-links:hover {
+  visibility: visible;
 }
 
 .img-container:hover .project-pic {
@@ -254,28 +256,31 @@ visibility: visible;
 }
 
 .project-links {
- position: absolute;
- bottom: 20px;
- display: flex;
- visibility: hidden;
- width: 50%;
- justify-content: space-between;
- padding: 5px;
- border-radius: 30px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  visibility: hidden;
+  width: 50%;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 30px;
 }
 
-.btn{
- background-color: #3D9970;
+.btn {
+  background-color: #3D9970;
   border-radius: 15px;
   border: none;
   outline: none;
   padding: 5px 20px;
   font-weight: bold;
   cursor: pointer;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 .btn:hover {
-  background-color:   #39CCCC;
+  background-color: #39CCCC;
 }
 
 h3 {
@@ -287,6 +292,7 @@ h3 {
 }
 
 /* experience-page */
+
 #experience-page {
   color: silver;
 }
@@ -298,6 +304,7 @@ h3 {
 }
 
 /* languages-page */
+
 #languages-page table {
   margin: 20px;
   margin-bottom: 0;
@@ -337,21 +344,25 @@ table.Info tr th, table.Info tr:first-child td {
 }
 
 /* top-left border-radius */
+
 table tr:first-child th:first-child, table.Info tr:first-child td:first-child {
   border-top-left-radius: 6px;
 }
 
 /* top-right border-radius */
+
 table tr:first-child th:last-child, table.Info tr:first-child td:last-child {
   border-top-right-radius: 6px;
 }
 
 /* bottom-left border-radius */
+
 table tr:last-child td:first-child {
   border-bottom-left-radius: 6px;
 }
 
 /* bottom-right border-radius */
+
 table tr:last-child td:last-child {
   border-bottom-right-radius: 6px;
 }
@@ -368,6 +379,7 @@ h2 {
 }
 
 /* contact form */
+
 input, textarea {
   margin-bottom: 10px;
   width: 100%;
@@ -412,6 +424,7 @@ input {
 }
 
 /* footer */
+
 #footer {
   text-align: center;
 }
@@ -429,6 +442,7 @@ input {
 }
 
 /* Scroll up arrow */
+
 #toTop {
   display: none;
   position: fixed;
@@ -450,7 +464,7 @@ input {
 
 #top_p {
   opacity: 0;
-  margin:  0;
+  margin: 0;
   line-height: 1;
   font-size: 0;
   color: #434343;
@@ -459,8 +473,6 @@ input {
   bottom: 12px;
   transition-duration: 0.4s;
 }
-
-
 
 #toTop:hover #top_p {
   opacity: 1;
@@ -535,19 +547,15 @@ input {
     font-size: xx-small;
   }
   .burgerNav {
-   visibility: visible;
+    visibility: visible;
   }
-
   #poza_cv {
     width: 110px;
     margin-top: 18px;
   }
-
   #motto {
-   display: none;
+    display: none;
   }
-
-
   #top-menu-bar {
     margin-top: 0;
     border-radius: 0;
@@ -566,11 +574,9 @@ input {
     animation: navSlideOut 0s forwards;
     box-shadow: none;
   }
-
   .navBar-open {
     overflow: hidden;
-}
-
+  }
   #top-menu-bar li {
     opacity: 0;
   }
@@ -580,50 +586,40 @@ input {
   .nav-off {
     animation: navSlideOut 0.5s ease both;
   }
-  
   #top-menu-bar li:last-of-type {
     margin-bottom: 15vh;
   }
   /* content */
   .pages {
     min-width: 100%;
-    
   }
   .page-block {
-    margin:8px;
+    margin: 8px;
     padding-left: 15px;
     padding-right: 15px;
   }
   .page-block ul {
     padding-left: 10px;
   }
-
   .skills-container {
     grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
   }
-
   .img-container {
     width: 90%;
   }
-
   .img-container:hover .project-pic {
     opacity: 1;
   }
-
   .project-links {
     width: 80%;
     visibility: visible;
-    background-color: rgba(256, 256, 256, 0.3)
   }
-
-  .btn{
+  .btn {
     font-size: x-small;
   }
-
   #experience-page p {
     padding-right: 10px;
   }
-
   #languages-page table {
     width: 90%;
     margin: 20px auto;
@@ -642,26 +638,21 @@ input {
     margin: 15px;
     text-align: center;
   }
-
   #toTop {
-   background-color: rgba(240, 240, 240, 0.6);
-   border-radius: 50%;
-   padding: 3px 5px;
+    background-color: rgba(240, 240, 240, 0.6);
+    border-radius: 50%;
+    padding: 3px 5px;
     bottom: 30px;
     right: 30px;
     opacity: 1;
   }
- 
   #up-arrow {
     width: 30px;
   }
-  
   #top_p {
     display: none;
   }
 }
-
-
 
 @media only screen and (min-width: 1224px) {
   body {
