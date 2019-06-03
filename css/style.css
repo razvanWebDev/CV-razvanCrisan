@@ -384,7 +384,6 @@ input, textarea {
   margin-bottom: 10px;
   width: 100%;
   border: 1px solid #bbb;
-  ;
   border-radius: 3px;
   box-sizing: border-box;
   padding-left: 5px;
@@ -421,6 +420,10 @@ input {
   color: #434343;
   background-image: none;
   background-color: #eeeeee !important;
+}
+
+#contact p {
+  cursor: default;
 }
 
 /* footer */
