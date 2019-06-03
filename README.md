@@ -29,4 +29,4 @@ if localhost:5000 is taken, open the localhost provided in the terminal
 
 ## Open CV in browser
 
-open https://crsnrazvan84.github.io/
+open https://razvanwebdeveloper.github.io/
