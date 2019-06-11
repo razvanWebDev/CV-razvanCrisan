@@ -1,7 +1,7 @@
 [
     {
         "name": "Gym Member App",
-        "imgPath": "../src/img/fitness-app.png",
+        "imgPath": "/src/img/fitness-app.png",
         "codeLink": "https://github.com/razvanwebdev/node-fitness-members-app",
         "demoLink": "https://razvanwebdev.github.io/node-fitness-members-app/public/index.html",
         "description": "An app  designed to manage Gym Member subscriptions. Allows CRUD operationd and contains multiple member editable features like contract extension, adding or deleting gym sessions and member info. On demo version, the members are loaded from a JSON file, so not all CRUD are available in this case.",
@@ -9,7 +9,7 @@
     },
     {
         "name": "Beauty Studio Website",
-        "imgPath": "../src/img/beauty-studio.png",
+        "imgPath": "./src/img/beauty-studio.png",
         "codeLink": "https://github.com/razvanwebdev/beauty-studio-barnsley",
         "demoLink": "https://razvanwebdev.github.io/beauty-studio-barnsley/", 
         "description": "Beauty studio website wich contains a welcome page, price listings, an offers page and contact.", 
