@@ -1,7 +1,7 @@
 [
     {
         "name": "Gym Member App",
-        "imgPath": "/src/img/fitness-app.png",
+        "imgPath": "./src/img/fitness-app.png",
         "codeLink": "https://github.com/razvanwebdev/node-fitness-members-app",
         "demoLink": "https://razvanwebdev.github.io/node-fitness-members-app/public/index.html",
         "description": "An app  designed to manage Gym Member subscriptions. Allows CRUD operationd and contains multiple member editable features like contract extension, adding or deleting gym sessions and member info. On demo version, the members are loaded from a JSON file, so not all CRUD are available in this case.",
@@ -17,7 +17,7 @@
     },
     {
         "name": "Rock Paper Scissors Lizzard Spock",
-        "imgPath": "../src/img/rock-paper-scissors-lizzard-spock.png",
+        "imgPath": "./src/img/rock-paper-scissors-lizzard-spock.png",
         "codeLink": "https://github.com/razvanwebdev/rock-paper-scissors-lizard-spock",
         "demoLink": "https://razvanwebdev.github.io/rock-paper-scissors-lizard-spock/index.html", 
         "description": "Classic Rock Paper Scissors game upgraded by Sheldon Cooper from tv series 'The Big Bang Theory', has a main page to play the game and rules page with the rules displayed and explained by Sheldon himself.", 
@@ -25,7 +25,7 @@
     },
     {
         "name": "Rock Paper Scissors",
-        "imgPath": "../src/img/rock-paper-scissors.png",
+        "imgPath": "./src/img/rock-paper-scissors.png",
         "codeLink": "https://github.com/razvanwebdev/rock-paper-scissors",
         "demoLink": "https://razvanwebdev.github.io/rock-paper-scissors/", 
         "description": "Classic Rock Paper Scissors game against the computer.", 
@@ -33,7 +33,7 @@
     },
     {
         "name": "Phone Book App",
-        "imgPath": "../src/img/PhoneBook.png",
+        "imgPath": "./src/img/PhoneBook.png",
         "codeLink": "https://github.com/razvanwebdev/node-agenda-app",
         "demoLink": "https://razvanwebdev.github.io/node-agenda-app/public/agenda.html", 
         "description": "My first nodeJS app containig CRUD oparations.", 
